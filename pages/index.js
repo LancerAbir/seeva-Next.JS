@@ -1,10 +1,10 @@
-import Header1 from "../src/layout/Header/Header1";
+import Header from "../src/layout/Header/Header";
 
 const index = () => {
     return (
         <>
             {/*====== Start Template Header ======*/}
-            <Header1 />
+            <Header />
             {/*====== End Template Header ======*/}
 
             {/*====== Hero Area Start ======*/}
