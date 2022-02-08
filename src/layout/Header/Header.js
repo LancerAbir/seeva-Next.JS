@@ -11,7 +11,7 @@ const Header = () => {
         <header
             className={`template-header sticky-header header-one ${
                 (currentPath === "/about", "/service" ? "" : "absolute-header")
-            } `}
+            } ${currentPath === "/" ? "absolute-header" : ""} `}
         >
             {/* Start MainMenu */}
             <MainMenu />

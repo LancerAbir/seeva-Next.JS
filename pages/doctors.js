@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const doctors = () => {
@@ -36,9 +37,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Lee S. Williamson
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Lee S. Williamson</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">
                                         Cardiology
@@ -78,9 +79,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Greg S. Grinstead
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Greg S. Grinstead</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">Neurology</span>
                                     <ul className="social-links">
@@ -118,9 +119,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Roger K. Jackson
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Roger K. Jackson</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">
                                         Orthopedics
@@ -160,9 +161,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Rudolph V. Spitler
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Rudolph V. Spitler</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">
                                         Cardiology
@@ -202,9 +203,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Frank T. Grimsley
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Frank T. Grimsley</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">Neurology</span>
                                     <ul className="social-links">
@@ -242,9 +243,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Johnny R. Atterberry
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Johnny R. Atterberry</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">
                                         Orthopedics
@@ -284,9 +285,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Erik R. Faulkner
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Erik R. Faulkner</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">
                                         Cardiology
@@ -326,9 +327,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Phillip L. Williams
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Phillip L. Williams</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">Neurology</span>
                                     <ul className="social-links">
@@ -366,9 +367,9 @@ const doctors = () => {
                                 </div>
                                 <div className="doctor-information">
                                     <h5 className="name">
-                                        <a href="doctor-details.html">
-                                            Michael I. Johnson
-                                        </a>
+                                        <Link href="/doctor-details">
+                                            <a>Michael I. Johnson</a>
+                                        </Link>
                                     </h5>
                                     <span className="specialty">
                                         Orthopedics

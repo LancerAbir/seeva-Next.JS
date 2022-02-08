@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const blogStandard = () => {
@@ -34,12 +35,11 @@ const blogStandard = () => {
                                             src="/img/blog/01.jpg"
                                             alt="Image"
                                         />
-                                        <a
-                                            href="blog-details.html"
-                                            className="post-link"
-                                        >
-                                            <i className="fas fa-arrow-right" />
-                                        </a>
+                                        <Link href="/blog-details">
+                                            <a className="post-link">
+                                                <i className="fas fa-arrow-right" />
+                                            </a>
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <a href="#" className="post-author">
@@ -50,11 +50,13 @@ const blogStandard = () => {
                                             Raymond E. Quick
                                         </a>
                                         <h3 className="post-title">
-                                            <a href="blog-details.html">
-                                                Everything You Need to Know
-                                                About &amp; How to Deal With
-                                                Back Pain During.
-                                            </a>
+                                            <Link href="/blog-details">
+                                                <a>
+                                                    Everything You Need to Know
+                                                    About &amp; How to Deal With
+                                                    Back Pain During.
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <p>
                                             Lorem ipsum dolor sit amet,
@@ -91,12 +93,11 @@ const blogStandard = () => {
                                             src="/img/blog/02.jpg"
                                             alt="Image"
                                         />
-                                        <a
-                                            href="blog-details.html"
-                                            className="post-link"
-                                        >
-                                            <i className="fas fa-arrow-right" />
-                                        </a>
+                                        <Link href="/blog-details">
+                                            <a className="post-link">
+                                                <i className="fas fa-arrow-right" />
+                                            </a>
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <a href="#" className="post-author">
@@ -107,11 +108,13 @@ const blogStandard = () => {
                                             Raymond E. Quick
                                         </a>
                                         <h3 className="post-title">
-                                            <a href="blog-details.html">
-                                                Everything You Need Know About
-                                                Healthcare DevTools Debugging
-                                                Tips Shortcuts
-                                            </a>
+                                            <Link href="/blog-details">
+                                                <a>
+                                                    Everything You Need Know
+                                                    About Healthcare DevTools
+                                                    Debugging Tips Shortcuts
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <p>
                                             Lorem ipsum dolor sit amet,
@@ -145,11 +148,13 @@ const blogStandard = () => {
                                 <div className="single-blog-post bg-dark-post">
                                     <div className="post-content">
                                         <h3 className="post-title">
-                                            <a href="blog-details.html">
-                                                Talk Your Child About
-                                                Coronavirus Smtp Context
-                                                Variables Hugo Static Site
-                                            </a>
+                                            <Link href="/blog-details">
+                                                <a>
+                                                    Talk Your Child About
+                                                    Coronavirus Smtp Context
+                                                    Variables Hugo Static Site
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <a href="#" className="post-author">
                                             <img
@@ -190,11 +195,13 @@ const blogStandard = () => {
                                             Raymond E. Quick
                                         </a>
                                         <h3 className="post-title">
-                                            <a href="blog-details.html">
-                                                How to Deal With Back Pain
-                                                During Pregnancy Time Video For
-                                                Size And Quality
-                                            </a>
+                                            <Link href="/blog-details">
+                                                <a>
+                                                    How to Deal With Back Pain
+                                                    During Pregnancy Time Video
+                                                    For Size And Quality
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <p>
                                             Lorem ipsum dolor sit amet,
@@ -231,12 +238,11 @@ const blogStandard = () => {
                                             src="/img/blog/03.jpg"
                                             alt="Image"
                                         />
-                                        <a
-                                            href="blog-details.html"
-                                            className="post-link"
-                                        >
-                                            <i className="fas fa-arrow-right" />
-                                        </a>
+                                        <Link href="/blog-details">
+                                            <a className="post-link">
+                                                <i className="fas fa-arrow-right" />
+                                            </a>
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <a href="#" className="post-author">
@@ -247,11 +253,13 @@ const blogStandard = () => {
                                             Raymond E. Quick
                                         </a>
                                         <h3 className="post-title">
-                                            <a href="blog-details.html">
-                                                Telemedicine overprescribes
-                                                antib iotics: Are you really
-                                                receiving..
-                                            </a>
+                                            <Link href="/blog-details">
+                                                <a>
+                                                    Telemedicine overprescribes
+                                                    antib iotics: Are you really
+                                                    receiving..
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <p>
                                             Lorem ipsum dolor sit amet,
@@ -365,11 +373,13 @@ const blogStandard = () => {
                                             </div>
                                             <div className="content">
                                                 <h6>
-                                                    <a href="blog-details.html">
-                                                        Build Seamless
-                                                        Spreadsheet Import
-                                                        Experience
-                                                    </a>
+                                                    <Link href="/blog-details">
+                                                        <a>
+                                                            Build Seamless
+                                                            Spreadsheet Import
+                                                            Experience
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="date">
                                                     <i className="far fa-calendar-alt" />
@@ -386,11 +396,13 @@ const blogStandard = () => {
                                             </div>
                                             <div className="content">
                                                 <h6>
-                                                    <a href="blog-details.html">
-                                                        Creating Online
-                                                        Environment Work Well
-                                                        Older
-                                                    </a>
+                                                    <Link href="/blog-details">
+                                                        <a>
+                                                            Creating Online
+                                                            Environment Work
+                                                            Well Older
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="date">
                                                     <i className="far fa-calendar-alt" />
@@ -407,10 +419,12 @@ const blogStandard = () => {
                                             </div>
                                             <div className="content">
                                                 <h6>
-                                                    <a href="blog-details.html">
-                                                        Signs Website Feels More
-                                                        Haunted House
-                                                    </a>
+                                                    <Link href="/blog-details">
+                                                        <a>
+                                                            Signs Website Feels
+                                                            More Haunted House
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="date">
                                                     <i className="far fa-calendar-alt" />

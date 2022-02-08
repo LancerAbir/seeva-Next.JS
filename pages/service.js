@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const service = () => {
@@ -45,9 +46,9 @@ const service = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Cardiology
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Cardiology</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Amet consect ascnge eiusmod tempors
@@ -70,9 +71,9 @@ const service = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Neurology
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Neurology</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Quis autem reprehe nderit voluptate
@@ -98,9 +99,9 @@ const service = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Orthopedics
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Orthopedics</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Amet consect ascnge eiusmod tempors
@@ -123,9 +124,9 @@ const service = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Covid 19
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Covid 19</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Quis autem reprehe nderit voluptate
@@ -148,9 +149,9 @@ const service = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Orthopedics
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Orthopedics</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Quis autem reprehe nderit voluptate
@@ -173,9 +174,9 @@ const service = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Pulmonary
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Pulmonary</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Quis autem reprehe nderit voluptate

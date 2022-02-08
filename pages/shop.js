@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const shop = () => {
@@ -72,9 +73,12 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Rubber Glove Isolated
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Rubber Glove
+                                                            Isolated
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -110,9 +114,9 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Medical Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>Medical Face Mask</a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -148,9 +152,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -186,9 +192,12 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Rubber Glove Isolated
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Rubber Glove
+                                                            Isolated
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -224,9 +233,9 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Medical Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>Medical Face Mask</a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -262,9 +271,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -300,9 +311,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -338,9 +351,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -376,9 +391,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -414,9 +431,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -452,9 +471,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>
@@ -490,9 +511,11 @@ const shop = () => {
                                         <div className="content">
                                             <div className="content-left">
                                                 <h6 className="name">
-                                                    <a href="product-details.html">
-                                                        Covid - 19 Face Mask
-                                                    </a>
+                                                    <Link href="/product-details">
+                                                        <a>
+                                                            Covid - 19 Face Mask
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <ul className="categories">
                                                     <li>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const about = () => {
@@ -100,12 +101,11 @@ const about = () => {
                                     aspernatur aut odit aut fugit quia conquntur
                                     magni dolores eos qui ratione voluptatem
                                 </p>
-                                <a
-                                    href="about.html"
-                                    className="template-btn mt-40"
-                                >
-                                    Learn More <i className="far fa-plus" />
-                                </a>
+                                <Link href="/about">
+                                    <a className="template-btn mt-40">
+                                        Learn More <i className="far fa-plus" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -136,9 +136,12 @@ const about = () => {
                                     data-wow-delay="0.3s"
                                 >
                                     <h4 className="title">
-                                        <a href="service.html">
-                                            Optimize Your Health Care Services
-                                        </a>
+                                        <Link href="/service">
+                                            <a>
+                                                Optimize Your Health Care
+                                                Services
+                                            </a>
+                                        </Link>
                                     </h4>
                                     <div className="image">
                                         <img
@@ -154,9 +157,9 @@ const about = () => {
                                     data-wow-delay="0.4s"
                                 >
                                     <h4 className="title">
-                                        <a href="service.html">
-                                            Boost Employee Engagement
-                                        </a>
+                                        <Link href="/service">
+                                            <a>Boost Employee Engagement</a>
+                                        </Link>
                                     </h4>
                                     <div className="image">
                                         <img
@@ -172,9 +175,12 @@ const about = () => {
                                     data-wow-delay="0.5s"
                                 >
                                     <h4 className="title">
-                                        <a href="service.html">
-                                            Accelerate Your Return On Investment
-                                        </a>
+                                        <Link href="/service">
+                                            <a>
+                                                Accelerate Your Return On
+                                                Investment
+                                            </a>
+                                        </Link>
                                     </h4>
                                     <div className="image">
                                         <img
@@ -217,9 +223,9 @@ const about = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Allan K. Simons
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Allan K. Simons</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Dental Specialist
@@ -265,9 +271,9 @@ const about = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Marcus K. Staton
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Marcus K. Staton</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Neurology
@@ -313,9 +319,9 @@ const about = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Travis A. Costillo
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Travis A. Costillo</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Orthopedics
@@ -361,9 +367,9 @@ const about = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                M.Calhoun
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>M.Calhoun</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Cardiology

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const blogDetails = () => {
@@ -41,11 +42,13 @@ const blogDetails = () => {
                                             Raymond E. Quick
                                         </a>
                                         <h3 className="post-title">
-                                            <a href="blog-details.html">
-                                                Everything You Need to Know
-                                                About &amp; How to Deal With
-                                                Back Pain During.
-                                            </a>
+                                            <Link href="/blog-details">
+                                                <a>
+                                                    Everything You Need to Know
+                                                    About &amp; How to Deal With
+                                                    Back Pain During.
+                                                </a>
+                                            </Link>
                                         </h3>
                                         <p>
                                             Amet consectetur adipisicing elit,
@@ -453,11 +456,13 @@ const blogDetails = () => {
                                             </div>
                                             <div className="content">
                                                 <h6>
-                                                    <a href="blog-details.html">
-                                                        Build Seamless
-                                                        Spreadsheet Import
-                                                        Experience
-                                                    </a>
+                                                    <Link href="/blog-details">
+                                                        <a>
+                                                            Build Seamless
+                                                            Spreadsheet Import
+                                                            Experience
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="date">
                                                     <i className="far fa-calendar-alt" />
@@ -474,11 +479,13 @@ const blogDetails = () => {
                                             </div>
                                             <div className="content">
                                                 <h6>
-                                                    <a href="blog-details.html">
-                                                        Creating Online
-                                                        Environment Work Well
-                                                        Older
-                                                    </a>
+                                                    <Link href="/blog-details">
+                                                        <a>
+                                                            Creating Online
+                                                            Environment Work
+                                                            Well Older
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="date">
                                                     <i className="far fa-calendar-alt" />
@@ -495,10 +502,12 @@ const blogDetails = () => {
                                             </div>
                                             <div className="content">
                                                 <h6>
-                                                    <a href="blog-details.html">
-                                                        Signs Website Feels More
-                                                        Haunted House
-                                                    </a>
+                                                    <Link href="/blog-details">
+                                                        <a>
+                                                            Signs Website Feels
+                                                            More Haunted House
+                                                        </a>
+                                                    </Link>
                                                 </h6>
                                                 <span className="date">
                                                     <i className="far fa-calendar-alt" />

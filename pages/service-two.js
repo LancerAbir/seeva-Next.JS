@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const serviceTwo = () => {
@@ -37,9 +38,9 @@ const serviceTwo = () => {
                                     <img src="/img/icon/heart.png" alt="Icon" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Cardiology
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Cardiology</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -49,12 +50,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +65,9 @@ const serviceTwo = () => {
                                     <img src="/img/icon/lungs.png" alt="Icon" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">Pulmonary</a>
+                                    <Link href="/service-details">
+                                        <a>Pulmonary</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -74,12 +77,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +92,9 @@ const serviceTwo = () => {
                                     <img src="/img/icon/brain.png" alt="Icon" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">Neurology</a>
+                                    <Link href="/service-details">
+                                        <a>Neurology</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -99,12 +104,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -117,9 +122,9 @@ const serviceTwo = () => {
                                     />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Gastroenterology
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Gastroenterology</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -129,12 +134,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -144,9 +149,9 @@ const serviceTwo = () => {
                                     <img src="/img/icon/virus.png" alt="Icon" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Covid - 19
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Covid - 19</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -156,12 +161,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -174,9 +179,9 @@ const serviceTwo = () => {
                                     />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Orthopedics
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Orthopedics</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -186,12 +191,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -201,9 +206,9 @@ const serviceTwo = () => {
                                     <img src="/img/icon/eye.png" alt="Icon" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Eye Caring
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Eye Caring</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -213,12 +218,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -228,9 +233,9 @@ const serviceTwo = () => {
                                     <img src="/img/icon/teeth.png" alt="Icon" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Dental Caring
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Dental Caring</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -240,12 +245,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -258,9 +263,9 @@ const serviceTwo = () => {
                                     />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Dental Caring
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Dental Caring</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Dolor sit amet consectetur ascing elitsed
@@ -270,12 +275,12 @@ const serviceTwo = () => {
                                     <span className="link-icon">
                                         <i className="far fa-plus" />
                                     </span>
-                                    <a
-                                        className="box-link"
-                                        href="service-details.html"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-link">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
-import React from "react";
+import Link from "next/link";
+import Footer from "../src/layout/Footer/Footer";
 import Header2 from "../src/layout/Header/Header2";
 
 const indexTwo = () => {
@@ -250,20 +251,20 @@ const indexTwo = () => {
                                     <i className="flaticon-tooth-1" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Medicine Care
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Medicine Care</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Perspiciatis unde omniste natus error
                                     volutatem
                                 </p>
-                                <a
-                                    href="service-details.html"
-                                    className="box-link"
-                                >
-                                    <i className="far fa-plus" />
-                                </a>
+
+                                <Link href="/service-details">
+                                    <a className="box-link">
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-10">
@@ -275,20 +276,19 @@ const indexTwo = () => {
                                     <i className="flaticon-tooth-2" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Medicine Care
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Medicine Care</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Perspiciatis unde omniste natus error
                                     volutatem
                                 </p>
-                                <a
-                                    href="service-details.html"
-                                    className="box-link"
-                                >
-                                    <i className="far fa-plus" />
-                                </a>
+                                <Link href="/service-details">
+                                    <a className="box-link">
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-10">
@@ -300,20 +300,19 @@ const indexTwo = () => {
                                     <i className="flaticon-tooth-3" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Dental Care
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Dental Care</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Perspiciatis unde omniste natus error
                                     volutatem
                                 </p>
-                                <a
-                                    href="service-details.html"
-                                    className="box-link"
-                                >
-                                    <i className="far fa-plus" />
-                                </a>
+                                <Link href="/service-details">
+                                    <a className="box-link">
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-10">
@@ -325,20 +324,19 @@ const indexTwo = () => {
                                     <i className="flaticon-tooth-4" />
                                 </div>
                                 <h4 className="title">
-                                    <a href="service-details.html">
-                                        Child Care
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a>Child Care</a>
+                                    </Link>
                                 </h4>
                                 <p>
                                     Perspiciatis unde omniste natus error
                                     volutatem
                                 </p>
-                                <a
-                                    href="service-details.html"
-                                    className="box-link"
-                                >
-                                    <i className="far fa-plus" />
-                                </a>
+                                <Link href="/service-details">
+                                    <a className="box-link">
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -420,20 +418,20 @@ const indexTwo = () => {
                                 </div>
                                 <div className="box-content">
                                     <h4 className="title">
-                                        <a href="service-details.html">
-                                            Cardiology
-                                        </a>
+                                        <Link href="/service-details">
+                                            <a>Cardiology</a>
+                                        </Link>
                                     </h4>
                                     <p>
                                         Sed ut perspiciats undec omnise vluptate
                                         accusantium dolore
                                     </p>
-                                    <a
-                                        href="service-details.html"
-                                        className="box-btn"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-btn">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                     <div className="box-icon">
                                         <i className="flaticon-virus" />
                                     </div>
@@ -450,20 +448,20 @@ const indexTwo = () => {
                                 </div>
                                 <div className="box-content">
                                     <h4 className="title">
-                                        <a href="service-details.html">
-                                            Pulmonary
-                                        </a>
+                                        <Link href="/service-details">
+                                            <a>Pulmonary</a>
+                                        </Link>
                                     </h4>
                                     <p>
                                         Sed ut perspiciats undec omnise vluptate
                                         accusantium dolore
                                     </p>
-                                    <a
-                                        href="service-details.html"
-                                        className="box-btn"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-btn">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                     <div className="box-icon">
                                         <i className="flaticon-virus" />
                                     </div>
@@ -480,20 +478,21 @@ const indexTwo = () => {
                                 </div>
                                 <div className="box-content">
                                     <h4 className="title">
-                                        <a href="service-details.html">
-                                            Neurology
-                                        </a>
+                                        <Link href="/service-details">
+                                            <a>Neurology</a>
+                                        </Link>
                                     </h4>
                                     <p>
                                         Sed ut perspiciats undec omnise vluptate
                                         accusantium dolore
                                     </p>
-                                    <a
-                                        href="service-details.html"
-                                        className="box-btn"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+
+                                    <Link href="/service-details">
+                                        <a className="box-btn">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                     <div className="box-icon">
                                         <i className="flaticon-virus" />
                                     </div>
@@ -510,20 +509,20 @@ const indexTwo = () => {
                                 </div>
                                 <div className="box-content">
                                     <h4 className="title">
-                                        <a href="service-details.html">
-                                            Covid - 19
-                                        </a>
+                                        <Link href="/service-details">
+                                            <a>Covid - 19</a>
+                                        </Link>
                                     </h4>
                                     <p>
                                         Sed ut perspiciats undec omnise vluptate
                                         accusantium dolore
                                     </p>
-                                    <a
-                                        href="service-details.html"
-                                        className="box-btn"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-btn">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                     <div className="box-icon">
                                         <i className="flaticon-virus" />
                                     </div>
@@ -540,20 +539,20 @@ const indexTwo = () => {
                                 </div>
                                 <div className="box-content">
                                     <h4 className="title">
-                                        <a href="service-details.html">
-                                            Orthopedics
-                                        </a>
+                                        <Link href="/service-details">
+                                            <a>Orthopedics</a>
+                                        </Link>
                                     </h4>
                                     <p>
                                         Sed ut perspiciats undec omnise vluptate
                                         accusantium dolore
                                     </p>
-                                    <a
-                                        href="service-details.html"
-                                        className="box-btn"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/service-details">
+                                        <a className="box-btn">
+                                            Read More
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                     <div className="box-icon">
                                         <i className="flaticon-virus" />
                                     </div>
@@ -707,13 +706,12 @@ const indexTwo = () => {
                             </div>
                         </div>
                         <div className="col-auto">
-                            <a
-                                href="doctors.html"
-                                className="template-btn template-btn-primary mt-sm-30"
-                            >
-                                Make An Appointment
-                                <i className="far fa=plus" />
-                            </a>
+                            <Link href="/doctors">
+                                <a className="template-btn template-btn-primary mt-sm-30">
+                                    Make An Appointment
+                                    <i className="far fa=plus" />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="doctor-bordered-wrapper">
@@ -756,9 +754,9 @@ const indexTwo = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Lee S. Williamson
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Lee S. Williamson</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Cardiology
@@ -804,9 +802,9 @@ const indexTwo = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Greg S. Grinstead
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Greg S. Grinstead</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Neurology
@@ -852,9 +850,9 @@ const indexTwo = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Roger K. Jackson
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Roger K. Jackson</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Orthopedics
@@ -900,9 +898,9 @@ const indexTwo = () => {
                                     </div>
                                     <div className="doctor-information">
                                         <h5 className="name">
-                                            <a href="doctor-details.html">
-                                                Ray. M. Drake
-                                            </a>
+                                            <Link href="/doctor-details">
+                                                <a>Ray. M. Drake</a>
+                                            </Link>
                                         </h5>
                                         <span className="specialty">
                                             Cardiology
@@ -1202,12 +1200,11 @@ const indexTwo = () => {
                             </div>
                         </div>
                         <div className="col-auto">
-                            <a
-                                href="doctors.html"
-                                className="template-btn mt-sm-30"
-                            >
-                                View More News <i className="far fa-plus" />
-                            </a>
+                            <Link href="/doctors">
+                                <a className="template-btn mt-sm-30">
+                                    View More News <i className="far fa-plus" />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="row justify-content-center latest-blog-loop">
@@ -1230,10 +1227,12 @@ const indexTwo = () => {
                                         </a>
                                     </div>
                                     <h4 className="blog-title">
-                                        <a href="blog-details.html">
-                                            Comprehensive Was Health Built
-                                            Complete Guide
-                                        </a>
+                                        <Link href="/blog-details">
+                                            <a>
+                                                Comprehensive Was Health Built
+                                                Complete Guide
+                                            </a>
+                                        </Link>
                                     </h4>
                                     <div className="blog-footer">
                                         <a href="#">
@@ -1267,10 +1266,12 @@ const indexTwo = () => {
                                         </a>
                                     </div>
                                     <h4 className="blog-title">
-                                        <a href="blog-details.html">
-                                            Why Content Such Fmental Design
-                                            Process Compre
-                                        </a>
+                                        <Link href="/blog-details">
+                                            <a>
+                                                Why Content Such Fmental Design
+                                                Process Compre
+                                            </a>
+                                        </Link>
                                     </h4>
                                     <div className="blog-footer">
                                         <a href="#">
@@ -1304,10 +1305,12 @@ const indexTwo = () => {
                                         </a>
                                     </div>
                                     <h4 className="blog-title">
-                                        <a href="blog-details.html">
-                                            Comprehensive Was Health Built
-                                            Complete Guide
-                                        </a>
+                                        <Link href="/blog-details">
+                                            <a>
+                                                Comprehensive Was Health Built
+                                                Complete Guide
+                                            </a>
+                                        </Link>
                                     </h4>
                                     <div className="blog-footer">
                                         <a href="#">
@@ -1426,186 +1429,7 @@ const indexTwo = () => {
             </a>
             {/*====== Back to Top End ======*/}
             {/*====== Start Template Footer ======*/}
-            <footer className="template-footer template-footer-white">
-                <div className="footer-inner bg-color-primary">
-                    <div className="container">
-                        <div className="footer-widgets">
-                            <div className="row">
-                                <div className="col-lg-3 col-md-8">
-                                    <div className="widget text-widget">
-                                        <div className="footer-logo">
-                                            <img
-                                                src="/img/logo-white.png"
-                                                alt="Medibo"
-                                            />
-                                        </div>
-                                        <p>
-                                            Sed ut perspi unde omniste natus
-                                            error sit voluptatem acc doloremque
-                                            laudantium
-                                        </p>
-                                        <ul className="contact-list">
-                                            <li>
-                                                <a href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
-                                                    <i className="far fa-map-marker-alt" />
-                                                    55 Main Road, USA
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="mailto:support@gmail.com">
-                                                    <i className="far fa-envelope" />
-                                                    support@gmail.com
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="tel:01267899">
-                                                    <i className="far fa-phone" />
-                                                    +012 (345) 678 99
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="row">
-                                        <div className="col-xl-5 col-md-6">
-                                            <div className="widget nav-widget">
-                                                <h4 className="widget-title">
-                                                    Popular Services
-                                                </h4>
-                                                <ul className="nav-links">
-                                                    <li>
-                                                        <a href="#">
-                                                            Orthopedic Care
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Gynecology Care
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Cardiology Care
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Dentistry Care
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Gastroenterology
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Urgent Care
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-7 col-md-6">
-                                            <div className="widget instagram-widget">
-                                                <h4 className="widget-title">
-                                                    Photo Gallery
-                                                </h4>
-                                                <div className="instagram-images">
-                                                    <div className="single-image">
-                                                        <img
-                                                            src="/img/instagram/01.jpg"
-                                                            alt="Instagram"
-                                                        />
-                                                        <a href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="single-image">
-                                                        <img
-                                                            src="/img/instagram/02.jpg"
-                                                            alt="Instagram"
-                                                        />
-                                                        <a href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="single-image">
-                                                        <img
-                                                            src="/img/instagram/03.jpg"
-                                                            alt="Instagram"
-                                                        />
-                                                        <a href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="single-image">
-                                                        <img
-                                                            src="/img/instagram/04.jpg"
-                                                            alt="Instagram"
-                                                        />
-                                                        <a href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="single-image">
-                                                        <img
-                                                            src="/img/instagram/05.jpg"
-                                                            alt="Instagram"
-                                                        />
-                                                        <a href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="single-image">
-                                                        <img
-                                                            src="/img/instagram/06.jpg"
-                                                            alt="Instagram"
-                                                        />
-                                                        <a href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-10">
-                                    <div className="widget newsletters-widget">
-                                        <h4 className="widget-title">
-                                            Newsletters
-                                        </h4>
-                                        <p>
-                                            Sed ut perspiciatis unde omniste
-                                            <br /> natus error sit voluptatem
-                                        </p>
-                                        <form
-                                            action="#"
-                                            className="newsletters-form"
-                                        >
-                                            <input
-                                                type="email"
-                                                placeholder="Email Address"
-                                            />
-                                            <button type="submit">
-                                                <i className="far fa-arrow-right" />
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="copyright-area">
-                            <p>
-                                © 2021 <a href="#">Seeva</a>. All Rights
-                                Reserved
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
             {/*====== End Template Footer ======*/}
         </>
     );

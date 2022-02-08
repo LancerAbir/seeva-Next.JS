@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../src/layout/Header/Header";
 
 const doctorDetails = () => {
@@ -432,9 +433,9 @@ const doctorDetails = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Cardiology
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Cardiology</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Amet consect ascnge eiusmod tempors
@@ -457,9 +458,9 @@ const doctorDetails = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Neurology
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Neurology</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Quis autem reprehe nderit voluptate
@@ -485,9 +486,9 @@ const doctorDetails = () => {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="service-details.html">
-                                                Orthopedics
-                                            </a>
+                                            <Link href="/service-details">
+                                                <a>Orthopedics</a>
+                                            </Link>
                                         </h4>
                                         <p>
                                             Amet consect ascnge eiusmod tempors
