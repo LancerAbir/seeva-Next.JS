@@ -17,12 +17,16 @@ const Nav = () => {
                 }`}
             >
                 <ul className="primary-menu">
-                    <li className="active">
+                    <li className={` ${currentPath === "/" ? "active" : ""}`}>
                         <Link href="/">
                             <a>Home</a>
                         </Link>
                         <ul className="sub-menu">
-                            <li>
+                            <li
+                                className={` ${
+                                    currentPath === "/" ? "active" : ""
+                                }`}
+                            >
                                 <Link href="/">
                                     <a>Home One</a>
                                 </Link>
@@ -49,12 +53,34 @@ const Nav = () => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li
+                        className={` ${
+                            currentPath === "/about" ? "active" : ""
+                        }`}
+                    >
                         <Link href="/about">
                             <a>About</a>
                         </Link>
                     </li>
-                    <li>
+                    <li
+                        className={` ${
+                            currentPath === "/service"
+                                ? "active"
+                                : currentPath === "/service-two"
+                                ? "active"
+                                : currentPath === "/service-details"
+                                ? "active"
+                                : currentPath === "/pricing"
+                                ? "active"
+                                : currentPath === "/faq"
+                                ? "active"
+                                : currentPath === "/gallery"
+                                ? "active"
+                                : currentPath === "/appointments"
+                                ? "active"
+                                : ""
+                        }`}
+                    >
                         <a href="#">Pages</a>
                         <ul className="sub-menu">
                             <li>
@@ -101,7 +127,15 @@ const Nav = () => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li
+                        className={` ${
+                            currentPath === "/doctors"
+                                ? "active"
+                                : currentPath === "/doctor-details"
+                                ? "active"
+                                : ""
+                        }`}
+                    >
                         <Link href="/doctors">
                             <a>Doctors</a>
                         </Link>
@@ -118,7 +152,15 @@ const Nav = () => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li
+                        className={` ${
+                            currentPath === "/blog-standard"
+                                ? "active"
+                                : currentPath === "/blog-details"
+                                ? "active"
+                                : ""
+                        }`}
+                    >
                         <Link href="/blog-standard">
                             <a>Blog</a>
                         </Link>
@@ -135,7 +177,15 @@ const Nav = () => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li
+                        className={` ${
+                            currentPath === "/shop"
+                                ? "active"
+                                : currentPath === "/product-details"
+                                ? "active"
+                                : ""
+                        }`}
+                    >
                         <Link href="/shop">
                             <a>Shop</a>
                         </Link>
@@ -152,7 +202,11 @@ const Nav = () => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li
+                        className={` ${
+                            currentPath === "/contact" ? "active" : ""
+                        }`}
+                    >
                         <Link href="/contact">
                             <a>Contact</a>
                         </Link>
