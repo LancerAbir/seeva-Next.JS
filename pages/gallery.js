@@ -1,5 +1,6 @@
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import PageTitle from "../src/Template Parts/PageTitle";
 
 const gallery = () => {
     return (
@@ -8,20 +9,7 @@ const gallery = () => {
             <Header />
             {/*====== End Template Header ======*/}
             {/*====== Page Title Start ======*/}
-            <section className="page-title-area">
-                <div className="container">
-                    <h1 className="page-title">Our Gallery</h1>
-                    <ul className="breadcrumb-nav">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <i className="fas fa-angle-right" />
-                        </li>
-                        <li>Gallery</li>
-                    </ul>
-                </div>
-            </section>
+            <PageTitle />
             {/*====== Page Title End ======*/}
             {/*====== Gallery Area Start ======*/}
             <section className="gallery-section section-gap">

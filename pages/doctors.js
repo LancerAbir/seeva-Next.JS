@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import PageTitle from "../src/Template Parts/PageTitle";
 
 const doctors = () => {
     return (
@@ -9,20 +10,7 @@ const doctors = () => {
             <Header />
             {/*====== End Template Header ======*/}
             {/*====== Page Title Start ======*/}
-            <section className="page-title-area">
-                <div className="container">
-                    <h1 className="page-title">Meet The Doctors</h1>
-                    <ul className="breadcrumb-nav">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <i className="fas fa-angle-right" />
-                        </li>
-                        <li>Meet Our Doctors</li>
-                    </ul>
-                </div>
-            </section>
+            <PageTitle />
             {/*====== Page Title End ======*/}
             {/*====== Doctor Section Start ======*/}
             <section className="doctors-section section-gap">

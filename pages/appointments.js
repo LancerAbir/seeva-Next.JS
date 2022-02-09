@@ -1,5 +1,6 @@
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import PageTitle from "../src/Template Parts/PageTitle";
 
 const appointments = () => {
     return (
@@ -8,25 +9,7 @@ const appointments = () => {
             <Header />
             {/*====== End Template Header ======*/}
             {/*====== Page Title Start ======*/}
-            <section
-                className="page-title-area page-title-bg"
-                style={{
-                    backgroundImage: "url(/img/section-bg/page-title.jpg)",
-                }}
-            >
-                <div className="container">
-                    <h1 className="page-title">Appointment</h1>
-                    <ul className="breadcrumb-nav">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <i className="fas fa-angle-right" />
-                        </li>
-                        <li>Appointment</li>
-                    </ul>
-                </div>
-            </section>
+            <PageTitle />
             {/*====== Page Title End ======*/}
             {/*====== Appointment Section Start ======*/}
             <section className="appointment-section section-gap">

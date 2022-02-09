@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import PageTitle from "../src/Template Parts/PageTitle";
 
 const blogStandard = () => {
     return (
@@ -9,20 +10,7 @@ const blogStandard = () => {
             <Header />
             {/*====== End Template Header ======*/}
             {/*====== Page Title Start ======*/}
-            <section className="page-title-area">
-                <div className="container">
-                    <h1 className="page-title">Blog Standard</h1>
-                    <ul className="breadcrumb-nav">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <i className="fas fa-angle-right" />
-                        </li>
-                        <li>Blog Standard</li>
-                    </ul>
-                </div>
-            </section>
+            <PageTitle />
             {/*====== Page Title End ======*/}
             {/*====== Blog Standard Start ======*/}
             <section className="blog-area section-gap">

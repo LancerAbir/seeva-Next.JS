@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import PageTitle from "../src/Template Parts/PageTitle";
 
 const serviceDetails = () => {
     return (
@@ -9,25 +10,7 @@ const serviceDetails = () => {
             <Header />
             {/*====== End Template Header ======*/}
             {/*====== Page Title Start ======*/}
-            <section
-                className="page-title-area page-title-bg"
-                style={{
-                    backgroundImage: "url(/img/section-bg/page-title.jpg)",
-                }}
-            >
-                <div className="container">
-                    <h1 className="page-title">Service Details</h1>
-                    <ul className="breadcrumb-nav">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <i className="fas fa-angle-right" />
-                        </li>
-                        <li>Service Details</li>
-                    </ul>
-                </div>
-            </section>
+            <PageTitle />
             {/*====== Page Title End ======*/}
             {/*====== Service Area Start ======*/}
             <section className="services-area section-gap">

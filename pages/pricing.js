@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import PageTitle from "../src/Template Parts/PageTitle";
 
 const pricing = () => {
     return (
@@ -9,22 +9,7 @@ const pricing = () => {
             <Header />
             {/*====== End Template Header ======*/}
             {/*====== Page Title Start ======*/}
-            <section className="page-title-area">
-                <div className="container">
-                    <h1 className="page-title">Pricing &amp; Plan</h1>
-                    <ul className="breadcrumb-nav">
-                        <li>
-                            <Link href="/">
-                                <a>Home</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <i className="fas fa-angle-right" />
-                        </li>
-                        <li>Pricing &amp; Plan</li>
-                    </ul>
-                </div>
-            </section>
+            <PageTitle />
             {/*====== Page Title End ======*/}
             {/*====== Pricing Section Start ======*/}
             <section className="pricing-section section-gap">
