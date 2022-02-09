@@ -43,6 +43,8 @@ const MainMenu = () => {
                                     ) : (
                                         <img src="/img/logo.png" alt="Seeva" />
                                     )}
+
+                                    {/** {currentPath == "/" ? '' : currentPath == "/index-two" ? '' : ''} */}
                                 </a>
                             </Link>
                         </div>

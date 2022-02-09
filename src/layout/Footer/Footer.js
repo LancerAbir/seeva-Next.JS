@@ -1,4 +1,8 @@
 import { useRouter } from "next/router";
+import FooterAboutUs from "../../Template Parts/FooterAboutUs";
+import FooterCtaBoxes from "../../Template Parts/FooterCtaBoxes";
+import FooterCtaBoxesOne from "../../Template Parts/FooterCtaBoxesOne";
+import FooterOpeningNotice from "../../Template Parts/FooterOpeningNotice";
 
 const Footer = () => {
     const router = useRouter();
@@ -12,127 +16,94 @@ const Footer = () => {
                 currentPath == "/index-three"
                     ? "bg-color-grey template-footer-white have-cta-boxes-two"
                     : ""
-            }`}
+            } ${
+                currentPath == "/index-four"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            } ${
+                currentPath == "/index-five"
+                    ? "template-footer-white template-hover-tertiary"
+                    : ""
+            }  ${
+                currentPath == "/about"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            }${
+                currentPath == "/contact"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            }   ${
+                currentPath == "/service"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            }  ${
+                currentPath == "/service-two"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            }  ${
+                currentPath == "/service-details"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            } ${
+                currentPath == "/gallery"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            }
+            ${
+                currentPath == "/appointments"
+                    ? "template-footer-white have-cta-boxes-two"
+                    : ""
+            }
+            ${currentPath == "/pricing" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/faq" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/doctors" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/doctor-details" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/blog-standard" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/blog-details" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/shop" ? "have-cta-boxed-one" : ""}
+            ${currentPath == "/product-details" ? "have-cta-boxed-one" : ""}
+            `}
         >
             {currentPath == "/" ? (
-                <div className="cta-boxed-one">
-                    <div className="container">
-                        <div
-                            className="cta-inner bg-color-secondary bg-size-cover blend-mode-multiply"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/cta-img/cta-boxed-bg-1.jpg)",
-                            }}
-                        >
-                            <div className="row justify-content-center">
-                                <div className="col-xl-6 col-lg-8 col-md-10">
-                                    <div className="cta-content text-center">
-                                        <div className="section-heading heading-white">
-                                            <span className="tagline">
-                                                Get Free Consultations
-                                            </span>
-                                            <h2 className="title">
-                                                Looking a Doctors to Get Your
-                                                Services
-                                            </h2>
-                                        </div>
-                                        <ul className="cta-buttons d-flex justify-content-center flex-wrap">
-                                            <li>
-                                                <a
-                                                    href="#"
-                                                    className="template-btn template-btn-white"
-                                                >
-                                                    Get Free Quote
-                                                    <i className="far fa-plus" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="#"
-                                                    className="template-btn template-btn-bordered"
-                                                >
-                                                    Get Appointment
-                                                    <i className="far fa-plus" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/pricing" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/faq" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/doctors" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/doctor-details" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/blog-standard" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/blog-details" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/shop" ? (
+                <FooterCtaBoxesOne />
+            ) : currentPath == "/product-details" ? (
+                <FooterCtaBoxesOne />
             ) : (
                 ""
             )}
 
             {currentPath == "/index-three" ? (
-                <div className="cta-boxes-wrapper">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-4 col-md-6">
-                                <div
-                                    className="cta-boxed-two bg-color-secondary bg-size-cover blend-mode-multiply mb-30"
-                                    style={{
-                                        backgroundImage:
-                                            "url(/img/cta-img/cta-boxed-2-1.jpg)",
-                                    }}
-                                >
-                                    <h2 className="cta-title">
-                                        Looking a Doctors For Health Care
-                                    </h2>
-                                    <a
-                                        href="#"
-                                        className="template-btn template-btn-bordered"
-                                    >
-                                        Find Doctor
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div
-                                    className="cta-boxed-two bg-color-secondary bg-size-cover blend-mode-multiply mb-30"
-                                    style={{
-                                        backgroundImage:
-                                            "url(/img/cta-img/cta-boxed-2-2.jpg)",
-                                    }}
-                                >
-                                    <h2 className="cta-title">
-                                        Make Appointment Online (24/7)
-                                    </h2>
-                                    <a
-                                        href="#"
-                                        className="template-btn template-btn-bordered"
-                                    >
-                                        Appointment
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-8">
-                                <div
-                                    className="cta-boxed-two bg-color-secondary bg-size-cover blend-mode-multiply mb-30"
-                                    style={{
-                                        backgroundImage:
-                                            "url(/img/cta-img/cta-boxed-2-3.jpg)",
-                                    }}
-                                >
-                                    <h2 className="cta-title">
-                                        Innovative Psychial Therapist
-                                    </h2>
-                                    <a
-                                        href="#"
-                                        className="template-btn template-btn-bordered"
-                                    >
-                                        Find Doctor
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterCtaBoxes />
+            ) : currentPath == "/index-four" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/about" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/service" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/service-two" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/service-details" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/gallery" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/appointments" ? (
+                <FooterCtaBoxes />
+            ) : currentPath == "/contact" ? (
+                <FooterCtaBoxes />
             ) : (
                 ""
             )}
@@ -142,7 +113,32 @@ const Footer = () => {
                     currentPath === "/index-two" ? "bg-color-primary" : ""
                 } ${currentPath === "/" ? "bg-color-grey" : ""} ${
                     currentPath === "/index-three" ? "bg-color-primary" : ""
-                }  `}
+                } ${currentPath === "/index-four" ? "bg-color-primary" : ""} ${
+                    currentPath === "/index-five"
+                        ? "bg-size-cover bg-color-fourth"
+                        : ""
+                } ${currentPath === "/about" ? "bg-color-primary" : ""} 
+                ${currentPath === "/contact" ? "bg-color-primary" : ""} 
+                ${currentPath === "/service" ? "bg-color-primary" : ""} 
+                ${currentPath === "/service-two" ? "bg-color-primary" : ""} 
+                ${currentPath === "/service-details" ? "bg-color-primary" : ""}
+                ${currentPath === "/gallery" ? "bg-color-primary" : ""}
+                ${currentPath === "/appointments" ? "bg-color-primary" : ""}
+                ${currentPath === "/pricing" ? "bg-color-grey" : ""}
+                ${currentPath === "/faq" ? "bg-color-grey" : ""}
+                ${currentPath === "/doctors" ? "bg-color-grey" : ""}
+                ${currentPath === "/doctor-details" ? "bg-color-grey" : ""}
+                ${currentPath === "/blog-standard" ? "bg-color-grey" : ""}
+                ${currentPath === "/blog-details" ? "bg-color-grey" : ""}
+                ${currentPath === "/shop" ? "bg-color-grey" : ""}
+                ${currentPath === "/product-details" ? "bg-color-grey" : ""}
+                `}
+                style={{
+                    backgroundImage:
+                        currentPath == "/index-five"
+                            ? "url(/img/footer/footer-bg-pattern.jpg)"
+                            : "",
+                }}
             >
                 <div className="container">
                     <div className="footer-widgets">
@@ -151,6 +147,52 @@ const Footer = () => {
                                 <div className="widget text-widget">
                                     <div className="footer-logo">
                                         {currentPath == "/" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/index-five" ? (
+                                            <img
+                                                src="/img/logo-white-3.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/pricing" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/faq" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/doctors" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/doctor-details" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/blog-standard" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/blog-details" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath == "/shop" ? (
+                                            <img
+                                                src="/img/logo.png"
+                                                alt="Medibo"
+                                            />
+                                        ) : currentPath ==
+                                          "/product-details" ? (
                                             <img
                                                 src="/img/logo.png"
                                                 alt="Medibo"
@@ -227,69 +269,155 @@ const Footer = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-xl-7 col-md-6">
-                                        <div className="widget instagram-widget">
-                                            <h4 className="widget-title">
-                                                Photo Gallery
-                                            </h4>
-                                            <div className="instagram-images">
-                                                <div className="single-image">
-                                                    <img
-                                                        src="/img/instagram/01.jpg"
-                                                        alt="Instagram"
-                                                    />
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </a>
-                                                </div>
-                                                <div className="single-image">
-                                                    <img
-                                                        src="/img/instagram/02.jpg"
-                                                        alt="Instagram"
-                                                    />
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </a>
-                                                </div>
-                                                <div className="single-image">
-                                                    <img
-                                                        src="/img/instagram/03.jpg"
-                                                        alt="Instagram"
-                                                    />
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </a>
-                                                </div>
-                                                <div className="single-image">
-                                                    <img
-                                                        src="/img/instagram/04.jpg"
-                                                        alt="Instagram"
-                                                    />
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </a>
-                                                </div>
-                                                <div className="single-image">
-                                                    <img
-                                                        src="/img/instagram/05.jpg"
-                                                        alt="Instagram"
-                                                    />
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </a>
-                                                </div>
-                                                <div className="single-image">
-                                                    <img
-                                                        src="/img/instagram/06.jpg"
-                                                        alt="Instagram"
-                                                    />
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </a>
+                                    {currentPath == "/" ? (
+                                        <div className="col-xl-7 col-md-6">
+                                            <div className="widget instagram-widget">
+                                                <h4 className="widget-title">
+                                                    Photo Gallery
+                                                </h4>
+                                                <div className="instagram-images">
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/01.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/02.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/03.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/04.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/05.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/06.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    ) : currentPath == "/index-three" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/index-four" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/index-five" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/about" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/service" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/service-two" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/service-details" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/gallery" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/appointments" ? (
+                                        <FooterAboutUs />
+                                    ) : currentPath == "/contact" ? (
+                                        <FooterAboutUs />
+                                    ) : (
+                                        <div className="col-xl-7 col-md-6">
+                                            <div className="widget instagram-widget">
+                                                <h4 className="widget-title">
+                                                    Photo Gallery
+                                                </h4>
+                                                <div className="instagram-images">
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/01.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/02.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/03.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/04.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/05.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="single-image">
+                                                        <img
+                                                            src="/img/instagram/06.jpg"
+                                                            alt="Instagram"
+                                                        />
+                                                        <a href="#">
+                                                            <i className="fab fa-instagram" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-10">
@@ -313,6 +441,29 @@ const Footer = () => {
                                             <i className="far fa-arrow-right" />
                                         </button>
                                     </form>
+                                    {currentPath == "/index-three" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/index-four" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/index-five" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/about" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/service" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/service-two" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/service-details" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/gallery" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/appointments" ? (
+                                        <FooterOpeningNotice />
+                                    ) : currentPath == "/contact" ? (
+                                        <FooterOpeningNotice />
+                                    ) : (
+                                        ""
+                                    )}
                                 </div>
                             </div>
                         </div>
