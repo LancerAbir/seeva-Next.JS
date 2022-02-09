@@ -17,9 +17,25 @@ const Nav = () => {
                 }`}
             >
                 <ul className="primary-menu">
-                    <li className={` ${currentPath === "/" ? "active" : ""}`}>
+                    <li
+                        className={` ${
+                            currentPath === "/"
+                                ? "active"
+                                : currentPath === "/index-two"
+                                ? "active"
+                                : currentPath === "/index-three"
+                                ? "active"
+                                : currentPath === "/index-four"
+                                ? "active"
+                                : currentPath === "/index-five"
+                                ? "active"
+                                : ""
+                        }`}
+                    >
                         <Link href="/">
-                            <a>Home</a>
+                            <a>
+                                Home <i className="far fa-plus" />
+                            </a>
                         </Link>
                         <ul className="sub-menu">
                             <li
@@ -81,11 +97,15 @@ const Nav = () => {
                                 : ""
                         }`}
                     >
-                        <a href="#">Pages</a>
+                        <a href="#">
+                            Pages <i className="far fa-plus" />
+                        </a>
                         <ul className="sub-menu">
                             <li>
                                 <Link href="/service">
-                                    <a>Services</a>
+                                    <a>
+                                        Services <i className="far fa-plus" />
+                                    </a>
                                 </Link>
                                 <ul className="sub-menu">
                                     <li>
@@ -137,7 +157,9 @@ const Nav = () => {
                         }`}
                     >
                         <Link href="/doctors">
-                            <a>Doctors</a>
+                            <a>
+                                Doctors <i className="far fa-plus" />
+                            </a>
                         </Link>
                         <ul className="sub-menu">
                             <li>
@@ -162,7 +184,9 @@ const Nav = () => {
                         }`}
                     >
                         <Link href="/blog-standard">
-                            <a>Blog</a>
+                            <a>
+                                Blog <i className="far fa-plus" />
+                            </a>
                         </Link>
                         <ul className="sub-menu">
                             <li>
@@ -187,7 +211,9 @@ const Nav = () => {
                         }`}
                     >
                         <Link href="/shop">
-                            <a>Shop</a>
+                            <a>
+                                Shop <i className="far fa-plus" />
+                            </a>
                         </Link>
                         <ul className="sub-menu">
                             <li>
@@ -214,7 +240,13 @@ const Nav = () => {
                     {currentPath == "/index-four" ? (
                         <li>
                             <a href="#" className="search-btn">
-                                <i className="far fa-search" />
+                                <i className="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                    ) : currentPath == "/index-three" ? (
+                        <li>
+                            <a href="#" className="search-btn">
+                                <i className="fa-solid fa-magnifying-glass"></i>
                             </a>
                         </li>
                     ) : (
@@ -226,12 +258,12 @@ const Nav = () => {
                 <ul className="extra-icons">
                     <li className="d-none d-sm-block">
                         <a href="#" className="search-btn">
-                            <i className="far fa-search" />
+                            <i className="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
                     <li className="d-none d-sm-block">
                         <a href="#" className="cart-icon">
-                            <i className="far fa-shopping-cart" />
+                            <i className="fa-solid fa-cart-shopping"></i>
                         </a>
                     </li>
                     <li className="d-none d-sm-block">

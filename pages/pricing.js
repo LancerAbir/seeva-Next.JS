@@ -56,23 +56,23 @@ const pricing = () => {
                                 </div>
                                 <ul className="pricing-feature">
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         COVID-19
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Eye Infections
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Senior Care
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Cardiology
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Family
                                     </li>
                                 </ul>
@@ -107,23 +107,23 @@ const pricing = () => {
                                 </div>
                                 <ul className="pricing-feature">
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         COVID-19
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Eye Infections
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Senior Care
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Cardiology
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Family
                                     </li>
                                 </ul>
@@ -161,23 +161,23 @@ const pricing = () => {
                                 </div>
                                 <ul className="pricing-feature">
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         COVID-19
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Eye Infections
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Senior Care
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Cardiology
                                     </li>
                                     <li>
-                                        <i className="far fa-arrow-right" />
+                                        <i className="fa-solid fa-arrow-right" />
                                         Family
                                     </li>
                                 </ul>

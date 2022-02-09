@@ -527,7 +527,7 @@ const shop = () => {
                             <ul className="pagination product-pagination">
                                 <li>
                                     <a href="#">
-                                        <i className="far fa-angle-left" />
+                                        <i className="fa-solid fa-angle-left" />
                                     </a>
                                 </li>
                                 <li>
@@ -543,7 +543,7 @@ const shop = () => {
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i className="far fa-angle-right" />
+                                        <i className="fa-solid fa-angle-right" />
                                     </a>
                                 </li>
                             </ul>

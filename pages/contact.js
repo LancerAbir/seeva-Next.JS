@@ -20,7 +20,7 @@ const contact = () => {
                                 <div className="single-contact-info">
                                     <div className="single-contact-info">
                                         <h3 className="info-title">
-                                            <i className="fal fa-map-marker-alt" />
+                                            <i className="fa-solid fa-location-dot" />
                                             Address
                                         </h3>
                                         <p>
@@ -31,8 +31,8 @@ const contact = () => {
                                     </div>
                                     <div className="single-contact-info">
                                         <h3 className="info-title">
-                                            <i className="fal fa-coffee" /> Get
-                                            In Touch
+                                            <i className="fa-solid fa-mug-saucer" />{" "}
+                                            Get In Touch
                                         </h3>
                                         <ul>
                                             <li>
@@ -57,7 +57,7 @@ const contact = () => {
                                     </div>
                                     <div className="single-contact-info">
                                         <h3 className="info-title">
-                                            <i className="fal fa-comments" />
+                                            <i className="fa-solid fa-comments" />
                                             Follow Us
                                         </h3>
                                         <p>
@@ -89,49 +89,49 @@ const contact = () => {
                                 <ul>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Monday
                                         </span>
                                         <span>9:00-19:00</span>
                                     </li>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Tuesday
                                         </span>
                                         <span>9:00-19:00</span>
                                     </li>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Wednesday
                                         </span>
                                         <span>9:00-19:00</span>
                                     </li>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Thursday
                                         </span>
                                         <span>9:00-19:00</span>
                                     </li>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Friday
                                         </span>
                                         <span>9:00-19:00</span>
                                     </li>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Saturday
                                         </span>
                                         <span>9:00-19:00</span>
                                     </li>
                                     <li>
                                         <span>
-                                            <i className="far fa-angle-right" />
+                                            <i className="fa-solid fa-angle-right" />
                                             Sunday
                                         </span>
                                         <span>9:00-19:00</span>

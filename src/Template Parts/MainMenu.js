@@ -12,12 +12,14 @@ const MainMenu = () => {
                 className={`${
                     currentPath == "/index-four"
                         ? "container container-1450"
-                        : "container-fluid container-1400"
-                } ${
-                    currentPath == "/index-five"
+                        : currentPath == "/index-five"
                         ? "container container-1600"
+                        : currentPath == "/index-three"
+                        ? "container"
                         : "container-fluid container-1400"
-                } `}
+                }
+                        : "container-fluid container-1400"
+                 `}
             >
                 <div
                     className={`header-navigation ${
@@ -27,7 +29,11 @@ const MainMenu = () => {
                     }`}
                 >
                     <div className="header-left">
-                        <div className="site-logo">
+                        <div
+                            className={`site-logo ${
+                                currentPath == "/index-three" ? "d-lg-none" : ""
+                            }`}
+                        >
                             <Link href="/">
                                 <a>
                                     {currentPath == "/index-four" ? (
@@ -38,6 +44,11 @@ const MainMenu = () => {
                                     ) : currentPath == "/index-five" ? (
                                         <img
                                             src="/img/logo-3.png"
+                                            alt="Seeva"
+                                        />
+                                    ) : currentPath == "/index-two" ? (
+                                        <img
+                                            src="/img/logo-2.png"
                                             alt="Seeva"
                                         />
                                     ) : (
@@ -59,7 +70,7 @@ const MainMenu = () => {
                             <ul className="extra-icons">
                                 <li className="d-none d-sm-block">
                                     <a href="#" className="cart-icon">
-                                        <i className="far fa-shopping-cart" />
+                                        <i className="fa-solid fa-cart-shopping"></i>
                                     </a>
                                 </li>
                                 <li className="d-none d-sm-block">
@@ -95,6 +106,33 @@ const MainMenu = () => {
                                 </li>
                             </ul>
                         </div>
+                    ) : currentPath == "/index-three" ? (
+                        <div className="header-right">
+                            <ul className="extra-icons">
+                                <li className="d-none d-sm-block">
+                                    <a href="#" className="cart-icon">
+                                        <i className="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                                <li className="d-none d-sm-block">
+                                    <a href="#" className="wishlist-icon">
+                                        <i className="far fa-heart" />
+                                    </a>
+                                </li>
+                                <li className="d-none d-lg-block">
+                                    <div className="off-canvas-btn">
+                                        <span />
+                                    </div>
+                                </li>
+                                <li className="d-lg-none">
+                                    <a href="#" className="navbar-toggler">
+                                        <span />
+                                        <span />
+                                        <span />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     ) : (
                         <div className="header-right">
                             <ul className="extra-icons">
@@ -106,7 +144,7 @@ const MainMenu = () => {
                                                 placeholder="Search Here"
                                             />
                                             <button type="submit">
-                                                <i className="far fa-search" />
+                                                <i className="fa-solid fa-magnifying-glass"></i>
                                             </button>
                                         </form>
                                     </div>

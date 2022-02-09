@@ -343,12 +343,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -389,12 +389,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -437,12 +437,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -486,12 +486,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -532,12 +532,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -580,12 +580,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -628,12 +628,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -674,12 +674,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -730,12 +730,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -776,12 +776,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -824,12 +824,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -873,12 +873,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -919,12 +919,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -967,12 +967,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1015,12 +1015,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1061,12 +1061,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1117,12 +1117,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1163,12 +1163,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1211,12 +1211,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1260,12 +1260,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1306,12 +1306,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1354,12 +1354,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1402,12 +1402,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1448,12 +1448,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1504,12 +1504,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1550,12 +1550,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1598,12 +1598,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1647,12 +1647,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1693,12 +1693,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1741,12 +1741,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1789,12 +1789,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1835,12 +1835,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1891,12 +1891,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1937,12 +1937,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -1985,12 +1985,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -2034,12 +2034,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -2080,12 +2080,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -2128,12 +2128,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -2176,12 +2176,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -2222,12 +2222,12 @@ const indexFive = () => {
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-expand" />
+                                                                <i className="fa-solid fa-expand" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#">
-                                                                <i className="far fa-repeat-alt" />
+                                                                <i className="fa-solid fa-repeat" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -2511,12 +2511,12 @@ const indexFive = () => {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-expand" />
+                                                <i className="fa-solid fa-expand" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-repeat-alt" />
+                                                <i className="fa-solid fa-repeat" />
                                             </a>
                                         </li>
                                     </ul>
@@ -2552,12 +2552,12 @@ const indexFive = () => {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-expand" />
+                                                <i className="fa-solid fa-expand" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-repeat-alt" />
+                                                <i className="fa-solid fa-repeat" />
                                             </a>
                                         </li>
                                     </ul>
@@ -2593,12 +2593,12 @@ const indexFive = () => {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-expand" />
+                                                <i className="fa-solid fa-expand" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-repeat-alt" />
+                                                <i className="fa-solid fa-repeat" />
                                             </a>
                                         </li>
                                     </ul>
@@ -2634,12 +2634,12 @@ const indexFive = () => {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-expand" />
+                                                <i className="fa-solid fa-expand" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-repeat-alt" />
+                                                <i className="fa-solid fa-repeat" />
                                             </a>
                                         </li>
                                     </ul>
@@ -2675,12 +2675,12 @@ const indexFive = () => {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-expand" />
+                                                <i className="fa-solid fa-expand" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-repeat-alt" />
+                                                <i className="fa-solid fa-repeat" />
                                             </a>
                                         </li>
                                     </ul>

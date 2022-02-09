@@ -211,7 +211,7 @@ const Footer = () => {
                                     <ul className="contact-list">
                                         <li>
                                             <a href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
-                                                <i className="far fa-map-marker-alt" />
+                                                <i className="fa-solid fa-location-dot"></i>
                                                 55 Main Road, USA
                                             </a>
                                         </li>
@@ -223,7 +223,7 @@ const Footer = () => {
                                         </li>
                                         <li>
                                             <a href="tel:01267899">
-                                                <i className="far fa-phone" />
+                                                <i className="fa-solid fa-phone-flip"></i>
                                                 +012 (345) 678 99
                                             </a>
                                         </li>
@@ -438,7 +438,7 @@ const Footer = () => {
                                             placeholder="Email Address"
                                         />
                                         <button type="submit">
-                                            <i className="far fa-arrow-right" />
+                                            <i className="fa-solid fa-arrow-right"></i>
                                         </button>
                                     </form>
                                     {currentPath == "/index-three" ? (

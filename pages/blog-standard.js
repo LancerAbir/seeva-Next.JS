@@ -69,7 +69,7 @@ const blogStandard = () => {
                                             </li>
                                             <li className="post-share">
                                                 <a href="#">
-                                                    <i className="far fa-share-alt" />
+                                                    <i className="fa-solid fa-share-nodes" />
                                                     (03)
                                                 </a>
                                             </li>
@@ -127,7 +127,7 @@ const blogStandard = () => {
                                             </li>
                                             <li className="post-share">
                                                 <a href="#">
-                                                    <i className="far fa-share-alt" />
+                                                    <i className="fa-solid fa-share-nodes" />
                                                     (03)
                                                 </a>
                                             </li>
@@ -167,7 +167,7 @@ const blogStandard = () => {
                                             </li>
                                             <li className="post-share">
                                                 <a href="#">
-                                                    <i className="far fa-share-alt" />
+                                                    <i className="fa-solid fa-share-nodes" />
                                                     (03)
                                                 </a>
                                             </li>
@@ -214,7 +214,7 @@ const blogStandard = () => {
                                             </li>
                                             <li className="post-share">
                                                 <a href="#">
-                                                    <i className="far fa-share-alt" />
+                                                    <i className="fa-solid fa-share-nodes" />
                                                     (03)
                                                 </a>
                                             </li>
@@ -272,7 +272,7 @@ const blogStandard = () => {
                                             </li>
                                             <li className="post-share">
                                                 <a href="#">
-                                                    <i className="far fa-share-alt" />
+                                                    <i className="fa-solid fa-share-nodes" />
                                                     (03)
                                                 </a>
                                             </li>
@@ -283,7 +283,7 @@ const blogStandard = () => {
                             <ul className="pagination">
                                 <li>
                                     <a href="#">
-                                        <i className="far fa-angle-left" />
+                                        <i className="fa-solid fa-angle-left" />
                                     </a>
                                 </li>
                                 <li>
@@ -299,7 +299,7 @@ const blogStandard = () => {
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i className="far fa-angle-right" />
+                                        <i className="fa-solid fa-angle-right" />
                                     </a>
                                 </li>
                             </ul>
@@ -316,7 +316,7 @@ const blogStandard = () => {
                                             placeholder="Keywords"
                                         />
                                         <button type="submit">
-                                            <i className="far fa-search" />
+                                            <i className="fa-solid fa-magnifying-glass" />
                                         </button>
                                     </form>
                                 </div>
