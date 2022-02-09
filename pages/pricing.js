@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 
@@ -13,7 +14,9 @@ const pricing = () => {
                     <h1 className="page-title">Pricing &amp; Plan</h1>
                     <ul className="breadcrumb-nav">
                         <li>
-                            <a href="#">Home</a>
+                            <Link href="/">
+                                <a>Home</a>
+                            </Link>
                         </li>
                         <li>
                             <i className="fas fa-angle-right" />
