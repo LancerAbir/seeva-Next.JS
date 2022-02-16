@@ -102,49 +102,49 @@ const serviceDetails = () => {
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Orthopedic Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Gynecology Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Primary Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Cardiology Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Cancer Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Dentistry Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Gastrology Care
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Urgent Care
                                             </a>
                                         </li>
@@ -201,49 +201,49 @@ const serviceDetails = () => {
                                     <ul>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Monday
                                             </span>
                                             <span>9:00-19:00</span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Tuesday
                                             </span>
                                             <span>9:00-19:00</span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Wednesday
                                             </span>
                                             <span>9:00-19:00</span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Thursday
                                             </span>
                                             <span>9:00-19:00</span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Friday
                                             </span>
                                             <span>9:00-19:00</span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Saturday
                                             </span>
                                             <span>9:00-19:00</span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="far fa-angle-right" />
+                                                <i className="fas fa-angle-right" />
                                                 Sunday
                                             </span>
                                             <span>9:00-19:00</span>

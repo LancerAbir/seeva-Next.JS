@@ -184,6 +184,11 @@ span {
     box-shadow: none;
 }
 
+i.far.fa-plus {
+    font-size: 13px;
+    font-weight: 600;
+}
+
 /*======= Colors & Background =======*/
 .color-primary {
     color: var(--color-primary) !important;
@@ -3364,6 +3369,19 @@ button {
 .doctor-box-one.bordered-style {
     padding: 20px 20px 55px;
     border: 1px solid var(--color-primary-10);
+    transition: 2s;
+}
+
+.latest-blog-one .btn-area {
+    display: none;
+}
+
+.latest-blog-one:hover .btn-area {
+    display: block;
+}
+
+.doctor-box-one.bordered-style:hover .social-links {
+    display: block;
 }
 
 .doctor-box-one.bordered-style .doctor-information {

@@ -1,8 +1,16 @@
 import Link from "next/link";
+import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 
 const index = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -782,126 +790,132 @@ const index = () => {
                                     </h2>
                                 </div>
                                 <div className="testimonial-slider-one">
-                                    <div className="single-testimonial-slider">
-                                        <div className="testimonial-inner">
-                                            <div className="avatar">
-                                                <img
-                                                    src="/img/testimonial/01.png"
-                                                    alt="Avatar"
-                                                />
-                                            </div>
-                                            <div className="content-wrap">
-                                                <p className="testimonial-desc">
-                                                    Sed ut perspiciatis unde
-                                                    omnis natusy error
-                                                    voluptatem accusantium
-                                                    doloreue laudan totam rem
-                                                    aperiam eaquip quae abillo
-                                                    inventore veritatis quasi
-                                                    architecto beatae vitae
-                                                    dicta sunt explicabo
-                                                </p>
-                                                <div className="author-info">
-                                                    <h5 className="name">
-                                                        Mark E. Kaminsky
-                                                    </h5>
-                                                    <span className="title">
-                                                        Web Designer
-                                                    </span>
+                                    <Slider {...settings}>
+                                        <div className="single-testimonial-slider">
+                                            <div className="testimonial-inner">
+                                                <div className="avatar">
+                                                    <img
+                                                        src="/img/testimonial/01.png"
+                                                        alt="Avatar"
+                                                    />
+                                                </div>
+                                                <div className="content-wrap">
+                                                    <p className="testimonial-desc">
+                                                        Sed ut perspiciatis unde
+                                                        omnis natusy error
+                                                        voluptatem accusantium
+                                                        doloreue laudan totam
+                                                        rem aperiam eaquip quae
+                                                        abillo inventore
+                                                        veritatis quasi
+                                                        architecto beatae vitae
+                                                        dicta sunt explicabo
+                                                    </p>
+                                                    <div className="author-info">
+                                                        <h5 className="name">
+                                                            Mark E. Kaminsky
+                                                        </h5>
+                                                        <span className="title">
+                                                            Web Designer
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="single-testimonial-slider">
-                                        <div className="testimonial-inner">
-                                            <div className="avatar">
-                                                <img
-                                                    src="/img/testimonial/01.png"
-                                                    alt="Avatar"
-                                                />
-                                            </div>
-                                            <div className="content-wrap">
-                                                <p className="testimonial-desc">
-                                                    Sed ut perspiciatis unde
-                                                    omnis natusy error
-                                                    voluptatem accusantium
-                                                    doloreue laudan totam rem
-                                                    aperiam eaquip quae abillo
-                                                    inventore veritatis quasi
-                                                    architecto beatae vitae
-                                                    dicta sunt explicabo
-                                                </p>
-                                                <div className="author-info">
-                                                    <h5 className="name">
-                                                        Mark E. Kaminsky
-                                                    </h5>
-                                                    <span className="title">
-                                                        Web Designer
-                                                    </span>
+                                        <div className="single-testimonial-slider">
+                                            <div className="testimonial-inner">
+                                                <div className="avatar">
+                                                    <img
+                                                        src="/img/testimonial/01.png"
+                                                        alt="Avatar"
+                                                    />
+                                                </div>
+                                                <div className="content-wrap">
+                                                    <p className="testimonial-desc">
+                                                        Sed ut perspiciatis unde
+                                                        omnis natusy error
+                                                        voluptatem accusantium
+                                                        doloreue laudan totam
+                                                        rem aperiam eaquip quae
+                                                        abillo inventore
+                                                        veritatis quasi
+                                                        architecto beatae vitae
+                                                        dicta sunt explicabo
+                                                    </p>
+                                                    <div className="author-info">
+                                                        <h5 className="name">
+                                                            Mark E. Kaminsky
+                                                        </h5>
+                                                        <span className="title">
+                                                            Web Designer
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="single-testimonial-slider">
-                                        <div className="testimonial-inner">
-                                            <div className="avatar">
-                                                <img
-                                                    src="/img/testimonial/01.png"
-                                                    alt="Avatar"
-                                                />
-                                            </div>
-                                            <div className="content-wrap">
-                                                <p className="testimonial-desc">
-                                                    Sed ut perspiciatis unde
-                                                    omnis natusy error
-                                                    voluptatem accusantium
-                                                    doloreue laudan totam rem
-                                                    aperiam eaquip quae abillo
-                                                    inventore veritatis quasi
-                                                    architecto beatae vitae
-                                                    dicta sunt explicabo
-                                                </p>
-                                                <div className="author-info">
-                                                    <h5 className="name">
-                                                        Mark E. Kaminsky
-                                                    </h5>
-                                                    <span className="title">
-                                                        Web Designer
-                                                    </span>
+                                        <div className="single-testimonial-slider">
+                                            <div className="testimonial-inner">
+                                                <div className="avatar">
+                                                    <img
+                                                        src="/img/testimonial/01.png"
+                                                        alt="Avatar"
+                                                    />
+                                                </div>
+                                                <div className="content-wrap">
+                                                    <p className="testimonial-desc">
+                                                        Sed ut perspiciatis unde
+                                                        omnis natusy error
+                                                        voluptatem accusantium
+                                                        doloreue laudan totam
+                                                        rem aperiam eaquip quae
+                                                        abillo inventore
+                                                        veritatis quasi
+                                                        architecto beatae vitae
+                                                        dicta sunt explicabo
+                                                    </p>
+                                                    <div className="author-info">
+                                                        <h5 className="name">
+                                                            Mark E. Kaminsky
+                                                        </h5>
+                                                        <span className="title">
+                                                            Web Designer
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="single-testimonial-slider">
-                                        <div className="testimonial-inner">
-                                            <div className="avatar">
-                                                <img
-                                                    src="/img/testimonial/01.png"
-                                                    alt="Avatar"
-                                                />
-                                            </div>
-                                            <div className="content-wrap">
-                                                <p className="testimonial-desc">
-                                                    Sed ut perspiciatis unde
-                                                    omnis natusy error
-                                                    voluptatem accusantium
-                                                    doloreue laudan totam rem
-                                                    aperiam eaquip quae abillo
-                                                    inventore veritatis quasi
-                                                    architecto beatae vitae
-                                                    dicta sunt explicabo
-                                                </p>
-                                                <div className="author-info">
-                                                    <h5 className="name">
-                                                        Mark E. Kaminsky
-                                                    </h5>
-                                                    <span className="title">
-                                                        Web Designer
-                                                    </span>
+                                        <div className="single-testimonial-slider">
+                                            <div className="testimonial-inner">
+                                                <div className="avatar">
+                                                    <img
+                                                        src="/img/testimonial/01.png"
+                                                        alt="Avatar"
+                                                    />
+                                                </div>
+                                                <div className="content-wrap">
+                                                    <p className="testimonial-desc">
+                                                        Sed ut perspiciatis unde
+                                                        omnis natusy error
+                                                        voluptatem accusantium
+                                                        doloreue laudan totam
+                                                        rem aperiam eaquip quae
+                                                        abillo inventore
+                                                        veritatis quasi
+                                                        architecto beatae vitae
+                                                        dicta sunt explicabo
+                                                    </p>
+                                                    <div className="author-info">
+                                                        <h5 className="name">
+                                                            Mark E. Kaminsky
+                                                        </h5>
+                                                        <span className="title">
+                                                            Web Designer
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Slider>
                                 </div>
                             </div>
                         </div>

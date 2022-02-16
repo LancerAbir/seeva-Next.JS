@@ -212,7 +212,7 @@ const Nav = () => {
                     >
                         <Link href="/shop">
                             <a>
-                                Shop <i className="far fa-plus" />
+                                Shop <i className="far fa-plus"></i>
                             </a>
                         </Link>
                         <ul className="sub-menu">
