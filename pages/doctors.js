@@ -2,6 +2,11 @@ import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
+import Counter from "../src/Third Party Components/Counter";
+import Line1 from "../src/Third Party Components/Progress Bar/Line1";
+import Line2 from "../src/Third Party Components/Progress Bar/Line2";
+import Line3 from "../src/Third Party Components/Progress Bar/Line3";
+import Line4 from "../src/Third Party Components/Progress Bar/Line4";
 
 const doctors = () => {
     return (
@@ -456,12 +461,10 @@ const doctors = () => {
                                                 Medical Care
                                             </h5>
                                             <span className="progress-percentage">
-                                                89%
+                                                <Counter end={89} />%
                                             </span>
                                         </div>
-                                        <div className="progress-line-wrap">
-                                            <div className="progress-line" />
-                                        </div>
+                                        <Line1 />
                                     </div>
                                     <div
                                         className="progress-bar-wrapper mb-40"
@@ -474,12 +477,10 @@ const doctors = () => {
                                                 Family Care
                                             </h5>
                                             <span className="progress-percentage">
-                                                64%
+                                                <Counter end={64} />%
                                             </span>
                                         </div>
-                                        <div className="progress-line-wrap">
-                                            <div className="progress-line" />
-                                        </div>
+                                        <Line2 />
                                     </div>
                                     <div
                                         className="progress-bar-wrapper mb-40"
@@ -492,12 +493,10 @@ const doctors = () => {
                                                 Child Care
                                             </h5>
                                             <span className="progress-percentage">
-                                                78%
+                                                <Counter end={78} />%
                                             </span>
                                         </div>
-                                        <div className="progress-line-wrap">
-                                            <div className="progress-line" />
-                                        </div>
+                                        <Line3 />
                                     </div>
                                     <div
                                         className="progress-bar-wrapper mb-40"
@@ -510,12 +509,10 @@ const doctors = () => {
                                                 Senior Care
                                             </h5>
                                             <span className="progress-percentage">
-                                                85%
+                                                <Counter end={85} />%
                                             </span>
                                         </div>
-                                        <div className="progress-line-wrap">
-                                            <div className="progress-line" />
-                                        </div>
+                                        <Line4 />
                                     </div>
                                 </div>
                             </div>

@@ -38,7 +38,7 @@ const Header2 = () => {
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i className="far fa-phone" /> Call US :
+                                        <i className="fas fa-phone" /> Call US :
                                         +012 (345) 6789
                                     </a>
                                 </li>

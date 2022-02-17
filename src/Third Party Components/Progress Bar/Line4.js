@@ -2,7 +2,7 @@ import { Line } from "rc-progress";
 import * as React from "react";
 import ReactVisibilitySensor from "react-visibility-sensor";
 
-class Line1 extends React.Component {
+class Line4 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -19,7 +19,7 @@ class Line1 extends React.Component {
     increase() {
         const { percent } = this.state;
         const newPercent = percent + 1;
-        if (newPercent >= 89) {
+        if (newPercent >= 85) {
             clearTimeout(this.tm);
             return;
         }
@@ -42,8 +42,8 @@ class Line1 extends React.Component {
                     <Line
                         strokeWidth="1"
                         strokeLinecap="square"
-                        strokeColor="rgb(73, 154, 250)"
-                        trailColor="rgb(228, 240, 254)"
+                        strokeColor="rgb(255, 48, 0)"
+                        trailColor="rgb(255, 224, 217)"
                         percent={isVisible ? percent : ""}
                         className="background-color: red"
                     />
@@ -53,4 +53,4 @@ class Line1 extends React.Component {
     }
 }
 
-export default Line1;
+export default Line4;

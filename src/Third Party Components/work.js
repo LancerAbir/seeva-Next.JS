@@ -30,12 +30,6 @@ shop -- Showing 12 of 36 Result
 
 
 
-
-hover iffect
---------------
-index-three -- Professional Doctors
-doctors -- 
-
 iSotop
 --------
 index-five -- Pharmacy Products
@@ -43,11 +37,12 @@ gallery --
 
 
 
-color bar
-------------
-appointments -- Professional Skills
-doctors -- Professional Skills
-doctor-details --  Professional Skills
+header flaxiable 
+-----------------------------------------------
+
+
+-
+
 
 
 pagination

@@ -7189,6 +7189,13 @@ h2.accordion-header span {
     display: block;
     text-align: start;
 }
+
+.doctor-information:hover .social-links {
+    display: block;
+}
+.doctor-information .social-links {
+    transition: 0.3s;
+}
 /*======= Seeva Video =======*/
 .seeva-video {
     position: relative;
