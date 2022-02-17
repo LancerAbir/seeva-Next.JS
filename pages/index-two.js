@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header2 from "../src/layout/Header/Header2";
+import Counter from "../src/Third Party Components/Counter";
 
 const indexTwo = () => {
     return (
@@ -574,7 +575,9 @@ const indexTwo = () => {
                                         <i className="flaticon-stethoscope" />
                                     </div>
                                     <div className="counter-wrap">
-                                        <span className="counter">359</span>
+                                        <span className="counter">
+                                            <Counter end={359} />
+                                        </span>
                                         <span className="suffix">+</span>
                                     </div>
                                     <h6 className="title">
@@ -588,7 +591,9 @@ const indexTwo = () => {
                                         <i className="flaticon-stethoscope" />
                                     </div>
                                     <div className="counter-wrap">
-                                        <span className="counter">85</span>
+                                        <span className="counter">
+                                            <Counter end={85} />
+                                        </span>
                                         <span className="suffix">k+</span>
                                     </div>
                                     <h6 className="title">
@@ -602,7 +607,9 @@ const indexTwo = () => {
                                         <i className="flaticon-stethoscope" />
                                     </div>
                                     <div className="counter-wrap">
-                                        <span className="counter">863</span>
+                                        <span className="counter">
+                                            <Counter end={863} />
+                                        </span>
                                         <span className="suffix">+</span>
                                     </div>
                                     <h6 className="title">
@@ -616,7 +623,9 @@ const indexTwo = () => {
                                         <i className="flaticon-stethoscope" />
                                     </div>
                                     <div className="counter-wrap">
-                                        <span className="counter">86</span>
+                                        <span className="counter">
+                                            <Counter end={86} />
+                                        </span>
                                         <span className="suffix">k+</span>
                                     </div>
                                     <h6 className="title">4.9 Star Reviews</h6>

@@ -377,7 +377,7 @@ const blogDetails = () => {
                                                             className="template-btn"
                                                         >
                                                             Send Comments
-                                                            <i className="far fa-arrow-right" />
+                                                            <i className="fas fa-arrow-right" />
                                                         </button>
                                                     </div>
                                                 </div>

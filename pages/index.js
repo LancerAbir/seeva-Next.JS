@@ -2,6 +2,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
+import Counter from "../src/Third Party Components/Counter";
 
 const index = () => {
     const settings = {
@@ -711,6 +712,63 @@ const index = () => {
                                             </select>
                                         </div>
                                     </div>
+
+                                    <div className="col-12">
+                                        <div
+                                            className="input-field wow fadeInLeft"
+                                            data-wow-delay="0.4s"
+                                            style={{
+                                                visibility: "visible",
+                                                animationDelay: "0.4s",
+                                                animationName: "fadeInLeft",
+                                            }}
+                                        >
+                                            <select style={{ display: "none" }}>
+                                                <div
+                                                    className="nice-select open"
+                                                    tabIndex={0}
+                                                >
+                                                    <span className="current">
+                                                        Services Category lancer
+                                                    </span>
+                                                    <ul className="list">
+                                                        <li
+                                                            data-value={1}
+                                                            className="option selected disabled focus"
+                                                        >
+                                                            Services Category
+                                                            lancer
+                                                        </li>
+                                                        <li
+                                                            data-value={2}
+                                                            className="option"
+                                                        >
+                                                            Service One
+                                                        </li>
+                                                        <li
+                                                            data-value={3}
+                                                            className="option"
+                                                        >
+                                                            Service Two
+                                                        </li>
+                                                        <li
+                                                            data-value={4}
+                                                            className="option"
+                                                        >
+                                                            Service Three
+                                                        </li>
+                                                        <li
+                                                            data-value={5}
+                                                            className="option"
+                                                        >
+                                                            Service Four
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                     <div className="col-12">
                                         <div
                                             className="input-field wow fadeInLeft"
@@ -939,7 +997,10 @@ const index = () => {
                             <div className="col-lg-auto col-md-5 col-sm-6">
                                 <div className="counter-item">
                                     <div className="counter-wrap">
-                                        <span className="counter">359</span>
+                                        <span className="counter">
+                                            <Counter end={359} />
+                                        </span>
+
                                         <span className="suffix">+</span>
                                     </div>
                                     <h6 className="title">
@@ -950,7 +1011,9 @@ const index = () => {
                             <div className="col-lg-auto col-md-5 col-sm-6">
                                 <div className="counter-item">
                                     <div className="counter-wrap">
-                                        <span className="counter">85</span>
+                                        <span className="counter">
+                                            <Counter end={85} />
+                                        </span>
                                         <span className="suffix">k+</span>
                                     </div>
                                     <h6 className="title">
@@ -961,7 +1024,9 @@ const index = () => {
                             <div className="col-lg-auto col-md-5 col-sm-6">
                                 <div className="counter-item">
                                     <div className="counter-wrap">
-                                        <span className="counter">863</span>
+                                        <span className="counter">
+                                            <Counter end={863} />
+                                        </span>
                                         <span className="suffix">+</span>
                                     </div>
                                     <h6 className="title">
@@ -972,7 +1037,9 @@ const index = () => {
                             <div className="col-lg-auto col-md-5 col-sm-6">
                                 <div className="counter-item">
                                     <div className="counter-wrap">
-                                        <span className="counter">86</span>
+                                        <span className="counter">
+                                            <Counter end={86} />
+                                        </span>
                                         <span className="suffix">k+</span>
                                     </div>
                                     <h6 className="title">4.9 Star Reviews</h6>

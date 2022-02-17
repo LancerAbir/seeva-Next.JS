@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "../src/layout/Footer/Footer";
 import Header4 from "../src/layout/Header/Header4";
+import Counter from "../src/Third Party Components/Counter";
 
 const indexFour = () => {
     return (
@@ -659,7 +660,9 @@ const indexFour = () => {
                                 <div className="col-lg-auto col-md-5 col-sm-6">
                                     <div className="counter-item counter-white">
                                         <div className="counter-wrap">
-                                            <span className="counter">359</span>
+                                            <span className="counter">
+                                                <Counter end={359} />
+                                            </span>
                                             <span className="suffix">+</span>
                                         </div>
                                         <h6 className="title">
@@ -670,7 +673,9 @@ const indexFour = () => {
                                 <div className="col-lg-auto col-md-5 col-sm-6">
                                     <div className="counter-item counter-white">
                                         <div className="counter-wrap">
-                                            <span className="counter">85</span>
+                                            <span className="counter">
+                                                <Counter end={85} />
+                                            </span>
                                             <span className="suffix">k+</span>
                                         </div>
                                         <h6 className="title">
@@ -681,7 +686,9 @@ const indexFour = () => {
                                 <div className="col-lg-auto col-md-5 col-sm-6">
                                     <div className="counter-item counter-white">
                                         <div className="counter-wrap">
-                                            <span className="counter">863</span>
+                                            <span className="counter">
+                                                <Counter end={863} />
+                                            </span>
                                             <span className="suffix">+</span>
                                         </div>
                                         <h6 className="title">
@@ -692,7 +699,9 @@ const indexFour = () => {
                                 <div className="col-lg-auto col-md-5 col-sm-6">
                                     <div className="counter-item counter-white">
                                         <div className="counter-wrap">
-                                            <span className="counter">86</span>
+                                            <span className="counter">
+                                                <Counter end={86} />
+                                            </span>
                                             <span className="suffix">k+</span>
                                         </div>
                                         <h6 className="title">
@@ -1024,12 +1033,12 @@ const indexFour = () => {
                                         voluptatem accusantium dolore mque
                                         laudantium totam rem
                                     </p>
-                                    <a
-                                        href="blog-details.html"
-                                        className="template-btn"
-                                    >
-                                        Read More <i className="far fa-plus" />
-                                    </a>
+                                    <Link href="/blog-details">
+                                        <a className="template-btn">
+                                            Read More{" "}
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

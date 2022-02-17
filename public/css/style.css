@@ -8176,6 +8176,23 @@ button {
     margin-top: 20px;
 }
 
+.input-field.wow.fadeInLeft select {
+    background-color: var(--color-white);
+    border-radius: 35px;
+    font-family: var(--font-lora);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+.input-field.wow.fadeInLeft select option {
+    background-color: var(--color-white);
+    border-radius: 35px;
+    font-family: var(--font-lora);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-heading);
+}
 .service-sidebar .widget.appointment-form .input-field {
     margin-top: 10px;
 }
