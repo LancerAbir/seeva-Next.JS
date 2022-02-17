@@ -1,8 +1,12 @@
+import dynamic from "next/dynamic";
+import React, { useState } from "react";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const faq = () => {
+    const [isOpen, setOpen] = useState(false);
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -425,8 +429,12 @@ const faq = () => {
                                         src="/img/section-img/faq-video.jpg"
                                         alt="Image"
                                     />
+
                                     <a
-                                        href="https://www.youtube.com/watch?v=U3ASj1L6_sY"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            setOpen(true);
+                                        }}
                                         className="video-popup"
                                     >
                                         <i className="fas fa-play" />
@@ -436,6 +444,13 @@ const faq = () => {
                         </div>
                     </div>
                 </div>
+                <ModalVideo
+                    channel="youtube"
+                    autoplay
+                    isOpen={isOpen}
+                    videoId="U3ASj1L6_sY"
+                    onClose={() => setOpen(false)}
+                />
             </section>
             {/*====== FAQ Section End ======*/}
             {/*====== Back to Top Start ======*/}
