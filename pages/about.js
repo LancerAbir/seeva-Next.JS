@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Accordion } from "react-bootstrap";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
@@ -420,101 +421,107 @@ const about = () => {
                                     laudantium totam rem aperieaqueys epsa quae
                                     abillo inventore veritatis et quase
                                 </p>
-                                <div
-                                    className="accordion accordion-style-two mt-30"
-                                    id="accordionFaq"
-                                >
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemOne"
-                                            >
-                                                <span>
-                                                    Advanced Equipment and Best
-                                                    Dentists
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemOne"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Orem psum dolor sit amet
-                                                    consectetur adipiscing elit
-                                                    sed do eiusmod tempor
-                                                    incididunt ut labore ets
-                                                    dolore magna aliqua uispsum
-                                                    suspendisse
-                                                </p>
-                                            </div>
-                                        </div>
+
+                                <Accordion defaultActiveKey="0" flush>
+                                    <div
+                                        className="accordion accordion-style-two mt-30"
+                                        id="accordionFaq"
+                                    >
+                                        <Accordion.Item eventKey="0">
+                                            <Accordion.Header>
+                                                <div
+                                                    className="accordion-header"
+                                                    style={{
+                                                        background:
+                                                            "transparent",
+                                                    }}
+                                                >
+                                                    <h6
+                                                        data-toggle="collapse"
+                                                        aria-expanded="true"
+                                                        data-target="#itemOne"
+                                                    >
+                                                        <span>
+                                                            Advanced Equipment
+                                                            and Best Dentists
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Orem psum dolor sit amet
+                                                        consectetur adipiscing
+                                                        elit sed do eiusmod
+                                                        tempor incididunt ut
+                                                        labore ets dolore magna
+                                                        aliqua uispsum
+                                                        suspendisse
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6
+                                                        data-toggle="collapse"
+                                                        aria-expanded="true"
+                                                        data-target="#itemOne"
+                                                    >
+                                                        <span>
+                                                            Advanced Equipment
+                                                            and Best Dentists
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Orem psum dolor sit amet
+                                                        consectetur adipiscing
+                                                        elit sed do eiusmod
+                                                        tempor incididunt ut
+                                                        labore ets dolore magna
+                                                        aliqua uispsum
+                                                        suspendisse
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="2">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6
+                                                        data-toggle="collapse"
+                                                        aria-expanded="true"
+                                                        data-target="#itemOne"
+                                                    >
+                                                        <span>
+                                                            Advanced Equipment
+                                                            and Best Dentists
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Orem psum dolor sit amet
+                                                        consectetur adipiscing
+                                                        elit sed do eiusmod
+                                                        tempor incididunt ut
+                                                        labore ets dolore magna
+                                                        aliqua uispsum
+                                                        suspendisse
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
                                     </div>
-                                    <div className="accordion-item active-accordion">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemTwo"
-                                            >
-                                                <span>
-                                                    Our 10 Years Working
-                                                    Experience
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse show"
-                                            id="itemTwo"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Orem psum dolor sit amet
-                                                    consectetur adipiscing elit
-                                                    sed do eiusmod tempor
-                                                    incididunt ut labore ets
-                                                    dolore magna aliqua uispsum
-                                                    suspendisse
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemThree"
-                                            >
-                                                <span>
-                                                    Advanced Equipment and Best
-                                                    Dentists
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemThree"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Orem psum dolor sit amet
-                                                    consectetur adipiscing elit
-                                                    sed do eiusmod tempor
-                                                    incididunt ut labore ets
-                                                    dolore magna aliqua uispsum
-                                                    suspendisse
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </Accordion>
                             </div>
                         </div>
                     </div>

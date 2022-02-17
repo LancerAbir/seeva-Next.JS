@@ -1,8 +1,11 @@
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import React, { useState } from "react";
+import { Accordion } from "react-bootstrap";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
+
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const faq = () => {
@@ -31,381 +34,336 @@ const faq = () => {
                                     gravida. Risus commodo viverra maecenas
                                     accumsan lacus vel facilisis.
                                 </p>
-                                <div className="accordion" id="accordionFaq">
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemOne"
-                                            >
-                                                <span>
-                                                    There Is No Such Thing As A
-                                                    CSS Absolute Unit
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemOne"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
+                                <Accordion defaultActiveKey="0" flush>
+                                    <div
+                                        className="accordion"
+                                        id="accordionFaq"
+                                    >
+                                        <Accordion.Item eventKey="0">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            There Is No Such
+                                                            Thing As A CSS
+                                                            Absolute Unit
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Build An E-Commerce
+                                                            Site With Angular
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="2">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            There Is No Such
+                                                            Thing As A CSS
+                                                            Absolute Unit
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="3">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            A Guide To
+                                                            Attracting Clients
+                                                            To Your Agency
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="4">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Useful Front-End
+                                                            boilerplate's And
+                                                            Starter Kits
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="5">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            There Is No Such
+                                                            Thing As A CSS
+                                                            Absolute Unit
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="6">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Primer On CSS
+                                                            Container Queries
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="7">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Newly Supported,
+                                                            Modern CSS
+                                                            Pseudo-Class
+                                                            Selectors
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="8">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Useful VS Code
+                                                            Extensions For
+                                                            Front-End Developers
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="9">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            There Is No Such
+                                                            Thing As A CSS
+                                                            Absolute Unit
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="10">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Primer On CSS
+                                                            Container Queries
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="11">
+                                            <Accordion.Header>
+                                                <div className="accordion-header">
+                                                    <h6>
+                                                        <span>
+                                                            Newly Supported,
+                                                            Modern CSS
+                                                            Pseudo-Class
+                                                            Selectors
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </Accordion.Header>
+                                            <Accordion.Body>
+                                                <div className="accordion-content">
+                                                    <p>
+                                                        Sed ut perspiciatis unde
+                                                        omnis iste natus error
+                                                        volup cusantium
+                                                        doloremque laudantium,
+                                                        totam rem aperiam eaque
+                                                        ipsa quae abillo
+                                                        inventore veritatis et
+                                                        quasi architecto beatae
+                                                    </p>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
                                     </div>
-                                    <div className="accordion-item active-accordion">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemTwo"
-                                            >
-                                                <span>
-                                                    Build An E-Commerce Site
-                                                    With Angular
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse show"
-                                            id="itemTwo"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemThree"
-                                            >
-                                                <span>
-                                                    There Is No Such Thing As A
-                                                    CSS Absolute Unit
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemThree"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemFour"
-                                            >
-                                                <span>
-                                                    A Guide To Attracting
-                                                    Clients To Your Agency
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemFour"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemFive"
-                                            >
-                                                <span>
-                                                    Useful Front-End
-                                                    boilerplate's And Starter
-                                                    Kits
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemFive"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemSix"
-                                            >
-                                                <span>
-                                                    There Is No Such Thing As A
-                                                    CSS Absolute Unit
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemSix"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemSeven"
-                                            >
-                                                <span>
-                                                    Primer On CSS Container
-                                                    Queries
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemSeven"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemEight"
-                                            >
-                                                <span>
-                                                    Newly Supported, Modern CSS
-                                                    Pseudo-Class Selectors
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemEight"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemNine"
-                                            >
-                                                <span>
-                                                    Useful VS Code Extensions
-                                                    For Front-End Developers
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemNine"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemTen"
-                                            >
-                                                <span>
-                                                    There Is No Such Thing As A
-                                                    CSS Absolute Unit
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemTen"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemEleven"
-                                            >
-                                                <span>
-                                                    Primer On CSS Container
-                                                    Queries
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemEleven"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <div className="accordion-header">
-                                            <h6
-                                                data-toggle="collapse"
-                                                aria-expanded="true"
-                                                data-target="#itemTwelve"
-                                            >
-                                                <span>
-                                                    Newly Supported, Modern CSS
-                                                    Pseudo-Class Selectors
-                                                </span>
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="collapse"
-                                            id="itemTwelve"
-                                            data-parent="#accordionFaq"
-                                        >
-                                            <div className="accordion-content">
-                                                <p>
-                                                    Sed ut perspiciatis unde
-                                                    omnis iste natus error volup
-                                                    cusantium doloremque
-                                                    laudantium, totam rem
-                                                    aperiam eaque ipsa quae
-                                                    abillo inventore veritatis
-                                                    et quasi architecto beatae
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </Accordion>
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-10">
@@ -430,27 +388,30 @@ const faq = () => {
                                         alt="Image"
                                     />
 
-                                    <a
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            setOpen(true);
-                                        }}
+                                    <Link href="#">
+                                        <a
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setOpen(true);
+                                            }}
+                                            className="video-popup"
+                                        >
+                                            <i className="fas fa-play" />
+                                        </a>
+                                    </Link>
+                                    <ModalVideo
+                                        channel="youtube"
                                         className="video-popup"
-                                    >
-                                        <i className="fas fa-play" />
-                                    </a>
+                                        autoplay
+                                        isOpen={isOpen}
+                                        videoId="U3ASj1L6_sY"
+                                        onClose={() => setOpen(false)}
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={isOpen}
-                    videoId="U3ASj1L6_sY"
-                    onClose={() => setOpen(false)}
-                />
             </section>
             {/*====== FAQ Section End ======*/}
             {/*====== Back to Top Start ======*/}

@@ -1,6 +1,7 @@
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
+import Line1 from "../src/Third Party Components/Progress Bar/Line1";
 
 const appointments = () => {
     return (
@@ -180,9 +181,7 @@ const appointments = () => {
                                                 89%
                                             </span>
                                         </div>
-                                        <div className="progress-line-wrap">
-                                            <div className="progress-line" />
-                                        </div>
+                                        <Line1 />
                                     </div>
                                     <div
                                         className="progress-bar-wrapper mb-40"

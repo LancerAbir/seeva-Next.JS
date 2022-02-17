@@ -1,9 +1,13 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
+import React, { useState } from "react";
 import Footer from "../src/layout/Footer/Footer";
 import Header2 from "../src/layout/Header/Header2";
 import Counter from "../src/Third Party Components/Counter";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const indexTwo = () => {
+    const [isOpen, setOpen] = useState(false);
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -643,12 +647,25 @@ const indexTwo = () => {
                         <div className="video-thumbnail">
                             <img src="/img/section-img/video.jpg" alt="Image" />
                         </div>
-                        <a
-                            href="https://www.youtube.com/watch?v=U3ASj1L6_sY"
+                        <Link href="#">
+                            <a
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setOpen(true);
+                                }}
+                                className="video-popup"
+                            >
+                                <i className="fas fa-play" />
+                            </a>
+                        </Link>
+                        <ModalVideo
+                            channel="youtube"
                             className="video-popup"
-                        >
-                            <i className="fas fa-play" />
-                        </a>
+                            autoplay
+                            isOpen={isOpen}
+                            videoId="U3ASj1L6_sY"
+                            onClose={() => setOpen(false)}
+                        />
                     </div>
                     <div className="container">
                         <div className="row justify-content-lg-end justify-content-center">

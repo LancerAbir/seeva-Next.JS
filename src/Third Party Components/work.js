@@ -15,11 +15,6 @@ product-details --
 
 
 
-video
---------
-index-two 
-index-four -- How Can We Help
-faq -- Frequently Asked Questions
 
 
 form 
@@ -34,9 +29,6 @@ doctor-details -- Make an Appointment
 shop -- Showing 12 of 36 Result
 
 
-view image and slide 
-----------------------
-index-three -- Medical Photo Gallery
 
 
 hover iffect
@@ -49,11 +41,6 @@ iSotop
 index-five -- Pharmacy Products
 gallery -- 
 
-
-bootstrap tab 
------------------
-about --- How Can We help
-faq -- Frequently Asked Questions
 
 
 color bar
