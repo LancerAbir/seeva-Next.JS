@@ -139,7 +139,7 @@ const MobilePanel = () => {
                         </ul>
                     </nav>
                     <a href="#" className="panel-close">
-                        <i className="fal fa-times" />
+                        <i className="fas fa-times" />
                     </a>
                 </div>
             </div>

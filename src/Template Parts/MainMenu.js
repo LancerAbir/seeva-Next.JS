@@ -6,6 +6,10 @@ const MainMenu = () => {
     const router = useRouter();
     const currentPath = router.pathname;
 
+    const activateLasers = () => {
+        alert("dd");
+    };
+
     return (
         <>
             <div
@@ -151,7 +155,10 @@ const MainMenu = () => {
                                     </div>
                                 </li>
                                 <li className="d-none d-xl-block">
-                                    <div className="off-canvas-btn style-two">
+                                    <div
+                                        className="off-canvas-btn style-two"
+                                        onClick={activateLasers}
+                                    >
                                         <span />
                                     </div>
                                 </li>

@@ -21,7 +21,7 @@ const StartOffCanvas = () => {
                         <h5 className="canvas-widget-title">Contact Us</h5>
                         <ul>
                             <li>
-                                <i className="far fa-map-marker-alt" />
+                                <i className="fas fa-map-marker-alt" />
                                 354 Oakridge, Camden NJ 08102 - USA
                             </li>
                             <li>
@@ -35,7 +35,7 @@ const StartOffCanvas = () => {
                             </li>
 
                             <li>
-                                <i className="far fa-phone" />
+                                <i className="fas fa-phone" />
                                 <a href="tel:+01234567899">+012 (345) 678 99</a>
                                 <br />
                                 <a href="tel:+8563214">+8563214</a>
@@ -43,7 +43,7 @@ const StartOffCanvas = () => {
                         </ul>
                     </div>
                     <a href="#" className="panel-close">
-                        <i className="fal fa-times" />
+                        <i className="fas fa-times" />
                     </a>
                 </div>
             </div>
