@@ -1,3 +1,4 @@
+import Sticky from "react-sticky-el";
 import MainMenu from "../../Template Parts/MainMenu";
 import MobilePanel from "../../Template Parts/MobilePanel";
 
@@ -55,12 +56,15 @@ const Header5 = () => {
                     </div>
                 </div>
             </div>
-            {/* Start MainMenu */}
-            <MainMenu />
-            {/* End MainMenu */}
-            {/* Start Mobile Panel */}
-            <MobilePanel />
-            {/* Start Mobile Panel */}
+
+            <Sticky className="sticky-on">
+                {/* Start MainMenu */}
+                <MainMenu />
+                {/* End MainMenu */}
+                {/* Start Mobile Panel */}
+                <MobilePanel />
+                {/* Start Mobile Panel */}
+            </Sticky>
         </header>
     );
 };

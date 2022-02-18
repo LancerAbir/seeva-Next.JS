@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Sticky from "react-sticky-el";
 import MainMenu from "../../Template Parts/MainMenu";
 import MobilePanel from "../../Template Parts/MobilePanel";
 import StartOffCanvas from "../../Template Parts/StartOffCanvas";
@@ -64,15 +65,17 @@ const Header2 = () => {
                 </div>
             </div>
 
-            {/* Start MainMenu */}
-            <MainMenu />
-            {/* End MainMenu */}
-            {/* Start Off Canvas */}
-            <StartOffCanvas />
-            {/* End Off Canvas */}
-            {/* Start Mobile Panel */}
-            <MobilePanel />
-            {/* Start Mobile Panel */}
+            <Sticky className="sticky-on">
+                {/* Start MainMenu */}
+                <MainMenu />
+                {/* End MainMenu */}
+                {/* Start Off Canvas */}
+                <StartOffCanvas />
+                {/* End Off Canvas */}
+                {/* Start Mobile Panel */}
+                <MobilePanel />
+                {/* Start Mobile Panel */}
+            </Sticky>
         </header>
     );
 };

@@ -1649,9 +1649,14 @@ button {
     background-color: var(--color-white);
 }
 
-
 .template-header.sticky-header.sticky-on .site-menu ul li {
     line-height: 100px;
+}
+.sticky {
+    background-color: #fff;
+}
+.sticky2 {
+    background-color: red;
 }
 
 .template-header.sticky-header.sticky-on .header-topbar,

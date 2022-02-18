@@ -1,4 +1,3 @@
-import React from "react";
 import MainMenu from "../../Template Parts/MainMenu";
 import MobilePanel from "../../Template Parts/MobilePanel";
 import StartOffCanvas from "../../Template Parts/StartOffCanvas";
@@ -12,7 +11,7 @@ const Header4 = () => {
                         Looking For a Dental Specialists ? Right Place We Are
                         Here For
                         <a href="#">
-                            <i className="far fa-phone" />
+                            <i className="fas fa-phone" />
                             <strong>Call US</strong>: +012 (345) 6789
                         </a>
                     </p>

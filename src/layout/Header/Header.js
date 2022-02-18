@@ -8,29 +8,12 @@ const Header = () => {
     const currentPath = router.pathname;
 
     return (
-        <Sticky
-            // style={{
-            //     position: "fixed",
-            //     left: "0",
-            //     top: "0",
-            //     width: "100%",
-            //     zIndex: "999",
-            //     webkitAnimation: "sticky 1.2s",
-            //     animation: "sticky 1.2s",
-            //     webkitBoxShadow: "0 8px 20px rgba(14, 32, 77, 0.08)",
-            //     boxShadow: "0 8px 20px rgba(14, 32, 77, 0.08)",
-            //     backgroundColor: "var(--color-white)",
-            // }}
-
-            boundaryElement=".block"
-            hideOnBoundaryHit={false}
+        <header
+            className={`template-header sticky-header header-one ${
+                (currentPath === "/about", "/service" ? "" : "absolute-header")
+            } ${currentPath === "/" ? "absolute-header" : ""} `}
         >
-            <header
-                className={`template-header sticky-header header-one ${
-                    (currentPath === "/about",
-                    "/service" ? "" : "absolute-header")
-                } ${currentPath === "/" ? "absolute-header" : ""} `}
-            >
+            <Sticky className="sticky-on">
                 {/* Start MainMenu */}
                 <MainMenu />
                 {/* End MainMenu */}
@@ -40,8 +23,8 @@ const Header = () => {
                 {/* Start Mobile Panel */}
                 <MobilePanel />
                 {/* Start Mobile Panel */}
-            </header>
-        </Sticky>
+            </Sticky>
+        </header>
     );
 };
 
