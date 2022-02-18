@@ -1,12 +1,75 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useState } from "react";
+import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header2 from "../src/layout/Header/Header2";
 import Counter from "../src/Third Party Components/Counter";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const indexTwo = () => {
+    const SampleNextArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="hero-slider-arrow hero-slider-arrow-top">
+                <button className="slick-arrow prev-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-left" />
+                </button>
+            </div>
+        );
+    };
+
+    const SamplePrevArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="hero-slider-arrow">
+                <button className="slick-arrow next-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-right" />
+                </button>
+            </div>
+        );
+    };
+
+    const settings = {
+        dots: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
+
+    const SampleNextArrow2 = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="testimonial-slider-arrow">
+                <button className="slick-arrow prev-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-left" />
+                </button>
+            </div>
+        );
+    };
+
+    const SamplePrevArrow2 = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="testimonial-slider-arrow">
+                <button className="slick-arrow next-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-right" />
+                </button>
+            </div>
+        );
+    };
+    const settings2 = {
+        dots: false,
+        nextArrow: <SampleNextArrow2 />,
+        prevArrow: <SamplePrevArrow2 />,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    };
     const [isOpen, setOpen] = useState(false);
     return (
         <>
@@ -16,128 +79,137 @@ const indexTwo = () => {
             {/*====== Hero Slider Start ======*/}
             <section className="hero-slider hero-slider-one">
                 <div className="hero-slider-active">
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-1.jpg)",
-                            }}
-                        />
-                        <div className="container container-1400">
+                    <Slider {...settings}>
+                        <div className="single-hero-slider">
                             <div
-                                className="slider-content-box"
-                                data-animation="fadeInUp"
-                                data-delay="0.4s"
-                            >
-                                <h1
-                                    className="title"
-                                    data-animation="fadeInDown"
-                                    data-delay="0.7s"
-                                >
-                                    We Care Medical &amp; Health
-                                </h1>
-                                <p
-                                    data-animation="fadeInLeft"
-                                    data-delay="0.8s"
-                                >
-                                    Dolor sit amet consectetur adipiscing
-                                    elitsedes eiusmod tempor incididunt utlabore
-                                </p>
-                                <a
-                                    href="#"
-                                    className="template-btn"
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-1.jpg)",
+                                }}
+                            />
+                            <div className="container container-1400">
+                                <div
+                                    className="slider-content-box"
                                     data-animation="fadeInUp"
-                                    data-delay="0.9s"
+                                    data-delay="0.4s"
                                 >
-                                    Make an Appointment
-                                    <i className="far fa-plus" />
-                                </a>
+                                    <h1
+                                        className="title"
+                                        data-animation="fadeInDown"
+                                        data-delay="0.7s"
+                                    >
+                                        We Care Medical &amp; Health
+                                    </h1>
+                                    <p
+                                        data-animation="fadeInLeft"
+                                        data-delay="0.8s"
+                                    >
+                                        Dolor sit amet consectetur adipiscing
+                                        elitsedes eiusmod tempor incididunt
+                                        utlabore
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="template-btn"
+                                        data-animation="fadeInUp"
+                                        data-delay="0.9s"
+                                    >
+                                        Make an Appointment
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-2.jpg)",
-                            }}
-                        />
-                        <div className="container container-1400">
+                        <div className="single-hero-slider">
                             <div
-                                className="slider-content-box"
-                                data-animation="fadeInUp"
-                                data-delay="0.4s"
-                            >
-                                <h1
-                                    className="title"
-                                    data-animation="fadeInDown"
-                                    data-delay="0.7s"
-                                >
-                                    We Care Medical &amp; Health
-                                </h1>
-                                <p
-                                    data-animation="fadeInLeft"
-                                    data-delay="0.8s"
-                                >
-                                    Dolor sit amet consectetur adipiscing
-                                    elitsedes eiusmod tempor incididunt utlabore
-                                </p>
-                                <a
-                                    href="#"
-                                    className="template-btn"
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-2.jpg)",
+                                }}
+                            />
+                            <div className="container container-1400">
+                                <div
+                                    className="slider-content-box"
                                     data-animation="fadeInUp"
-                                    data-delay="0.9s"
+                                    data-delay="0.4s"
                                 >
-                                    Make an Appointment
-                                    <i className="far fa-plus" />
-                                </a>
+                                    <h1
+                                        className="title"
+                                        data-animation="fadeInDown"
+                                        data-delay="0.7s"
+                                    >
+                                        We Care Medical &amp; Health
+                                    </h1>
+                                    <p
+                                        data-animation="fadeInLeft"
+                                        data-delay="0.8s"
+                                    >
+                                        Dolor sit amet consectetur adipiscing
+                                        elitsedes eiusmod tempor incididunt
+                                        utlabore
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="template-btn"
+                                        data-animation="fadeInUp"
+                                        data-delay="0.9s"
+                                    >
+                                        Make an Appointment
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-3.jpg)",
-                            }}
-                        />
-                        <div className="container container-1400">
+                        <div className="single-hero-slider">
                             <div
-                                className="slider-content-box"
-                                data-animation="fadeInUp"
-                                data-delay="0.4s"
-                            >
-                                <h1
-                                    className="title"
-                                    data-animation="fadeInDown"
-                                    data-delay="0.7s"
-                                >
-                                    We Care Medical &amp; Health
-                                </h1>
-                                <p
-                                    data-animation="fadeInLeft"
-                                    data-delay="0.8s"
-                                >
-                                    Dolor sit amet consectetur adipiscing
-                                    elitsedes eiusmod tempor incididunt utlabore
-                                </p>
-                                <a
-                                    href="#"
-                                    className="template-btn"
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-3.jpg)",
+                                }}
+                            />
+                            <div className="container container-1400">
+                                <div
+                                    className="slider-content-box"
                                     data-animation="fadeInUp"
-                                    data-delay="0.9s"
+                                    data-delay="0.4s"
                                 >
-                                    Make an Appointment
-                                    <i className="far fa-plus" />
-                                </a>
+                                    <h1
+                                        className="title"
+                                        data-animation="fadeInDown"
+                                        data-delay="0.7s"
+                                    >
+                                        We Care Medical &amp; Health
+                                    </h1>
+                                    <p
+                                        data-animation="fadeInLeft"
+                                        data-delay="0.8s"
+                                    >
+                                        Dolor sit amet consectetur adipiscing
+                                        elitsedes eiusmod tempor incididunt
+                                        utlabore
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="template-btn"
+                                        data-animation="fadeInUp"
+                                        data-delay="0.9s"
+                                    >
+                                        Make an Appointment
+                                        <i className="far fa-plus" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Slider>
                 </div>
-                <div className="hero-slider-arrow" />
+
+                {/*====== Slider Arrow Buttons Start ======*/}
+                {SampleNextArrow}
+                {SamplePrevArrow}
+                {/*====== Slider Arrow Buttons End ======*/}
             </section>
             {/*====== Hero Slider End ======*/}
             {/*====== About Section Start ======*/}
@@ -1083,116 +1155,119 @@ const indexTwo = () => {
                         </div>
                     </div>
                     <div className="row testimonial-slider-two">
-                        <div className="col-lg-6">
-                            <div className="single-testimonial-slider">
-                                <p className="content">
-                                    On the other hand we denounce riteous
-                                    indignation and dislike men wh beguiled and
-                                    demoralized by the charms of plsure of the
-                                    moment, so blinded by desire that they
-                                    cannot.
-                                </p>
-                                <div className="author-info-wrapper">
-                                    <div className="avatar">
-                                        <img
-                                            src="/img/testimonial/01.png"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="author-info">
-                                        <h5 className="name">
-                                            Mark E. Kaminsky
-                                        </h5>
-                                        <span className="title">
-                                            Web Designer
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="single-testimonial-slider">
-                                <p className="content">
-                                    On the other hand we denounce riteous
-                                    indignation and dislike men wh beguiled and
-                                    demoralized by the charms of plsure of the
-                                    moment, so blinded by desire that they
-                                    cannot.
-                                </p>
-                                <div className="author-info-wrapper">
-                                    <div className="avatar">
-                                        <img
-                                            src="/img/testimonial/02.png"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="author-info">
-                                        <h5 className="name">
-                                            Ronald C. Kendall
-                                        </h5>
-                                        <span className="title">
-                                            Web Designer
-                                        </span>
+                        <div className="col-lg-12">
+                            <Slider {...settings2}>
+                                <div className="single-testimonial-slider">
+                                    <p className="content">
+                                        On the other hand we denounce riteous
+                                        indignation and dislike men wh beguiled
+                                        and demoralized by the charms of plsure
+                                        of the moment, so blinded by desire that
+                                        they cannot.
+                                    </p>
+                                    <div className="author-info-wrapper">
+                                        <div className="avatar">
+                                            <img
+                                                src="/img/testimonial/01.png"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="author-info">
+                                            <h5 className="name">
+                                                Mark E. Kaminsky
+                                            </h5>
+                                            <span className="title">
+                                                Web Designer
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="single-testimonial-slider">
-                                <p className="content">
-                                    On the other hand we denounce riteous
-                                    indignation and dislike men wh beguiled and
-                                    demoralized by the charms of plsure of the
-                                    moment, so blinded by desire that they
-                                    cannot.
-                                </p>
-                                <div className="author-info-wrapper">
-                                    <div className="avatar">
-                                        <img
-                                            src="/img/testimonial/01.png"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="author-info">
-                                        <h5 className="name">
-                                            Mark E. Kaminsky
-                                        </h5>
-                                        <span className="title">
-                                            Web Designer
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="single-testimonial-slider">
-                                <p className="content">
-                                    On the other hand we denounce riteous
-                                    indignation and dislike men wh beguiled and
-                                    demoralized by the charms of plsure of the
-                                    moment, so blinded by desire that they
-                                    cannot.
-                                </p>
-                                <div className="author-info-wrapper">
-                                    <div className="avatar">
-                                        <img
-                                            src="/img/testimonial/02.png"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="author-info">
-                                        <h5 className="name">
-                                            Ronald C. Kendall
-                                        </h5>
-                                        <span className="title">
-                                            Web Designer
-                                        </span>
+
+                                <div className="single-testimonial-slider">
+                                    <p className="content">
+                                        On the other hand we denounce riteous
+                                        indignation and dislike men wh beguiled
+                                        and demoralized by the charms of plsure
+                                        of the moment, so blinded by desire that
+                                        they cannot.
+                                    </p>
+                                    <div className="author-info-wrapper">
+                                        <div className="avatar">
+                                            <img
+                                                src="/img/testimonial/02.png"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="author-info">
+                                            <h5 className="name">
+                                                Ronald C. Kendall
+                                            </h5>
+                                            <span className="title">
+                                                Web Designer
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+
+                                <div className="single-testimonial-slider">
+                                    <p className="content">
+                                        On the other hand we denounce riteous
+                                        indignation and dislike men wh beguiled
+                                        and demoralized by the charms of plsure
+                                        of the moment, so blinded by desire that
+                                        they cannot.
+                                    </p>
+                                    <div className="author-info-wrapper">
+                                        <div className="avatar">
+                                            <img
+                                                src="/img/testimonial/01.png"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="author-info">
+                                            <h5 className="name">
+                                                Mark E. Kaminsky
+                                            </h5>
+                                            <span className="title">
+                                                Web Designer
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="single-testimonial-slider">
+                                    <p className="content">
+                                        On the other hand we denounce riteous
+                                        indignation and dislike men wh beguiled
+                                        and demoralized by the charms of plsure
+                                        of the moment, so blinded by desire that
+                                        they cannot.
+                                    </p>
+                                    <div className="author-info-wrapper">
+                                        <div className="avatar">
+                                            <img
+                                                src="/img/testimonial/02.png"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="author-info">
+                                            <h5 className="name">
+                                                Ronald C. Kendall
+                                            </h5>
+                                            <span className="title">
+                                                Web Designer
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Slider>
                         </div>
                     </div>
-                    <div className="testimonial-slider-arrow" />
+
+                    {/*====== Slider Arrow Buttons Start ======*/}
+                    {SampleNextArrow2}
+                    {SamplePrevArrow2}
+                    {/*====== Slider Arrow Buttons End ======*/}
                 </div>
                 <div className="shape-images">
                     <div

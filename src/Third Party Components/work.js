@@ -2,7 +2,6 @@
 
 slider 
 ---------- 
-index-two -- header
 index-two -- Testimonials
 index-two -- Trusted Partners
 index-three -- Medical Services

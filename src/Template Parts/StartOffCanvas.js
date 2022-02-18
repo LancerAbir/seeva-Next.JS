@@ -1,10 +1,17 @@
+import { useState } from "react";
+
 const StartOffCanvas = ({ isActive }) => {
+    const [closeTab, setCloseTab] = useState(false);
+    const closeToggle = () => {
+        setCloseTab(!closeTab);
+    };
+
     return (
         <>
             <div
                 className={`slide-panel off-canvas-panel ${
-                    isActive ? "show-panel" : null
-                }`}
+                    closeTab ? "hide-panel" : ""
+                }  ${isActive ? "show-panel" : ""}`}
             >
                 <div className="panel-overlay" />
                 <div className="panel-inner">
@@ -44,7 +51,7 @@ const StartOffCanvas = ({ isActive }) => {
                             </li>
                         </ul>
                     </div>
-                    <a href="#" className="panel-close">
+                    <a href="#" className="panel-close" onClick={closeToggle}>
                         <i className="fas fa-times" />
                     </a>
                 </div>

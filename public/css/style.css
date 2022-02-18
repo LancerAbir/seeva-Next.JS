@@ -1773,6 +1773,11 @@ button {
     visibility: visible;
 }
 
+.hide-panel {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .slide-panel.show-panel .panel-overlay {
     visibility: visible;
     opacity: 0.5;
@@ -2299,6 +2304,10 @@ button {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+}
+
+.hero-slider-arrow-top {
+    margin-top: 65px;
 }
 
 .hero-slider-arrow .slick-arrow:hover {

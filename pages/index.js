@@ -7,6 +7,7 @@ import Counter from "../src/Third Party Components/Counter";
 const index = () => {
     const settings = {
         dots: true,
+        arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
