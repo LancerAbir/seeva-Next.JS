@@ -67,7 +67,7 @@ const indexFive = () => {
         const { onClick } = props;
         return (
             <div className="col-lg-6 col-sm-4">
-                <div className="product-carousel-arrows">
+                <div className="product-carousel-arrows mr5">
                     <button
                         className="slick-arrow prev-arrow"
                         onClick={onClick}
@@ -2625,7 +2625,7 @@ const indexFive = () => {
                         </div>
                     </div>
                     <div className="row product-carousel">
-                        <div className="col-12 col-md-12 col-sm-9">
+                        <div className="col col-12 col-md-12 col-sm-9">
                             <Slider {...settings2}>
                                 <div className="product-box product-box-bg">
                                     <div className="thumbnail">
