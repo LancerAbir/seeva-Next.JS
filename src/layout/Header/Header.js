@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { useState } from "react";
 import Sticky from "react-sticky-el";
 import MainMenu from "../../Template Parts/MainMenu";
 import MobilePanel from "../../Template Parts/MobilePanel";
@@ -6,6 +7,12 @@ import StartOffCanvas from "../../Template Parts/StartOffCanvas";
 const Header = () => {
     const router = useRouter();
     const currentPath = router.pathname;
+
+    const [isActive, setActive] = useState(false);
+
+    const activateLasers = () => {
+        setActive(!isActive);
+    };
 
     return (
         <header
@@ -15,10 +22,13 @@ const Header = () => {
         >
             <Sticky className="sticky-on">
                 {/* Start MainMenu */}
-                <MainMenu />
+                <MainMenu activateLasers={activateLasers} />
                 {/* End MainMenu */}
                 {/* Start Off Canvas */}
-                <StartOffCanvas />
+                <StartOffCanvas
+                    activateLasers={activateLasers}
+                    isActive={isActive}
+                />
                 {/* End Off Canvas */}
                 {/* Start Mobile Panel */}
                 <MobilePanel />

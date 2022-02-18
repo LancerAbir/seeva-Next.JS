@@ -1,9 +1,11 @@
-import React from "react";
-
-const StartOffCanvas = () => {
+const StartOffCanvas = ({ isActive }) => {
     return (
         <>
-            <div className="slide-panel off-canvas-panel">
+            <div
+                className={`slide-panel off-canvas-panel ${
+                    isActive ? "show-panel" : null
+                }`}
+            >
                 <div className="panel-overlay" />
                 <div className="panel-inner">
                     <div className="canvas-logo">

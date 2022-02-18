@@ -2,13 +2,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Nav from "./Nav";
 
-const MainMenu = () => {
+const MainMenu = ({ activateLasers }) => {
     const router = useRouter();
     const currentPath = router.pathname;
-
-    const activateLasers = () => {
-        alert("dd");
-    };
 
     return (
         <>
