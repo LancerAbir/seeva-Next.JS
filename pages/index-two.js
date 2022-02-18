@@ -43,7 +43,7 @@ const indexTwo = () => {
     const SampleNextArrow2 = (props) => {
         const { onClick } = props;
         return (
-            <div className="testimonial-slider-arrow">
+            <div className="testimonial-slider-arrow testimonial-slider-arrow-left">
                 <button className="slick-arrow prev-arrow" onClick={onClick}>
                     <i className="fas fa-angle-left" />
                 </button>
@@ -54,7 +54,7 @@ const indexTwo = () => {
     const SamplePrevArrow2 = (props) => {
         const { onClick } = props;
         return (
-            <div className="testimonial-slider-arrow">
+            <div className="testimonial-slider-arrow testimonial-slider-arrow-right">
                 <button className="slick-arrow next-arrow" onClick={onClick}>
                     <i className="fas fa-angle-right" />
                 </button>
@@ -68,6 +68,14 @@ const indexTwo = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 2,
+        slidesToScroll: 1,
+    };
+    const settings3 = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
         slidesToScroll: 1,
     };
     const [isOpen, setOpen] = useState(false);
@@ -1154,8 +1162,8 @@ const indexTwo = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row testimonial-slider-two">
-                        <div className="col-lg-12">
+                    <div className="row testimonial-slider-two gy-5">
+                        <div className="col-lg-12 p-3">
                             <Slider {...settings2}>
                                 <div className="single-testimonial-slider">
                                     <p className="content">
@@ -1440,85 +1448,98 @@ const indexTwo = () => {
                         </h2>
                     </div>
                     <div className="row partner-logo-slider">
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/09.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/10.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/11.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/12.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/13.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/09.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/10.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/11.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/12.png"
-                                    alt="Logo"
-                                />
-                            </a>
-                        </div>
-                        <div className="col partner-logo-box">
-                            <a href="#">
-                                <img
-                                    src="/img/partner-logos/13.png"
-                                    alt="Logo"
-                                />
-                            </a>
+                        <div className="col">
+                            <Slider {...settings3}>
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/09.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/10.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/11.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/12.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/13.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/09.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/10.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/11.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/12.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="partner-logo-box">
+                                    <a href="#">
+                                        <img
+                                            src="/img/partner-logos/13.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+                            </Slider>
                         </div>
                     </div>
                 </div>

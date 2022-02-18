@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useState } from "react";
+import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header4 from "../src/layout/Header/Header4";
 import Counter from "../src/Third Party Components/Counter";
@@ -9,6 +10,160 @@ const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const indexFour = () => {
     const [isOpen, setOpen] = useState(false);
+    const [nav1, setNav1] = useState();
+    const [nav2, setNav2] = useState();
+
+    const SampleNextArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="hero-slider-arrow ">
+                <button className="slick-arrow prev-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-left" />
+                </button>
+            </div>
+        );
+    };
+
+    const SamplePrevArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="hero-slider-arrow">
+                <button className="slick-arrow next-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-right" />
+                </button>
+            </div>
+        );
+    };
+
+    const settings = {
+        dots: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
+    const SampleNextArrow2 = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="slider-arrows">
+                <button className="slick-arrow prev-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-left" />
+                </button>
+            </div>
+        );
+    };
+
+    const SamplePrevArrow2 = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="slider-arrows">
+                <button className="slick-arrow next-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-right" />
+                </button>
+            </div>
+        );
+    };
+
+    const settings2 = {
+        dots: false,
+        nextArrow: <SampleNextArrow2 />,
+        prevArrow: <SamplePrevArrow2 />,
+        infinite: true,
+        speed: 500,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+    const settings3 = {
+        dots: false,
+        className: "center",
+        centerMode: true,
+        centerPadding: "-5px",
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -17,88 +172,92 @@ const indexFour = () => {
             {/*====== Hero Slider Start ======*/}
             <section className="hero-slider hero-slider-two">
                 <div className="hero-slider-active">
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-4.jpg)",
-                            }}
-                        />
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10 col-md-9">
-                                    <div className="hero-content text-center">
-                                        <span
-                                            className="tagline"
-                                            data-animation="fadeInDown"
-                                            data-delay="0.5s"
-                                        >
-                                            Love Respect &amp; Care
-                                        </span>
-                                        <h1
-                                            className="title"
-                                            data-animation="fadeInLeft"
-                                            data-delay="0.6s"
-                                        >
-                                            Trusted Dental Care Center
-                                        </h1>
-                                        <a
-                                            href="#"
-                                            className="template-btn"
-                                            data-animation="fadeInUp"
-                                            data-delay="0.7s"
-                                        >
-                                            Explore Our Service
-                                            <i className="far fa-plus" />
-                                        </a>
+                    <Slider {...settings}>
+                        <div className="single-hero-slider">
+                            <div
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-4.jpg)",
+                                }}
+                            />
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-10 col-md-9">
+                                        <div className="hero-content text-center">
+                                            <span
+                                                className="tagline"
+                                                data-animation="fadeInDown"
+                                                data-delay="0.5s"
+                                            >
+                                                Love Respect &amp; Care
+                                            </span>
+                                            <h1
+                                                className="title"
+                                                data-animation="fadeInLeft"
+                                                data-delay="0.6s"
+                                            >
+                                                Trusted Dental Care Center
+                                            </h1>
+                                            <a
+                                                href="#"
+                                                className="template-btn"
+                                                data-animation="fadeInUp"
+                                                data-delay="0.7s"
+                                            >
+                                                Explore Our Service
+                                                <i className="far fa-plus" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-5.jpg)",
-                            }}
-                        />
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10 col-md-9">
-                                    <div className="hero-content text-center">
-                                        <span
-                                            className="tagline"
-                                            data-animation="fadeInDown"
-                                            data-delay="0.5s"
-                                        >
-                                            Love Respect &amp; Care
-                                        </span>
-                                        <h1
-                                            className="title"
-                                            data-animation="fadeInLeft"
-                                            data-delay="0.6s"
-                                        >
-                                            Trusted Dental Care Center
-                                        </h1>
-                                        <a
-                                            href="#"
-                                            className="template-btn"
-                                            data-animation="fadeInUp"
-                                            data-delay="0.7s"
-                                        >
-                                            Explore Our Service
-                                            <i className="far fa-plus" />
-                                        </a>
+                        <div className="single-hero-slider">
+                            <div
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-5.jpg)",
+                                }}
+                            />
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-10 col-md-9">
+                                        <div className="hero-content text-center">
+                                            <span
+                                                className="tagline"
+                                                data-animation="fadeInDown"
+                                                data-delay="0.5s"
+                                            >
+                                                Love Respect &amp; Care
+                                            </span>
+                                            <h1
+                                                className="title"
+                                                data-animation="fadeInLeft"
+                                                data-delay="0.6s"
+                                            >
+                                                Trusted Dental Care Center
+                                            </h1>
+                                            <a
+                                                href="#"
+                                                className="template-btn"
+                                                data-animation="fadeInUp"
+                                                data-delay="0.7s"
+                                            >
+                                                Explore Our Service
+                                                <i className="far fa-plus" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Slider>
                 </div>
-                <div className="hero-slider-arrow" />
+
+                {SampleNextArrow}
+                {SamplePrevArrow}
             </section>
             {/*====== Hero Slider End ======*/}
             {/*====== Why Choose Section Start ======*/}
@@ -795,158 +954,180 @@ const indexFour = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-4 col-md-7 col-sm-9">
                                 <div className="thumb-wrapper">
-                                    <div className="single-thumb">
-                                        <img
-                                            src="/img/testimonial/06.jpg"
-                                            alt="Thumb"
-                                        />
-                                    </div>
-                                    <div className="single-thumb">
-                                        <img
-                                            src="/img/testimonial/07.jpg"
-                                            alt="Thumb"
-                                        />
-                                    </div>
-                                    <div className="single-thumb">
-                                        <img
-                                            src="/img/testimonial/08.jpg"
-                                            alt="Thumb"
-                                        />
-                                    </div>
-                                    <div className="single-thumb">
-                                        <img
-                                            src="/img/testimonial/06.jpg"
-                                            alt="Thumb"
-                                        />
-                                    </div>
-                                    <div className="single-thumb">
-                                        <img
-                                            src="/img/testimonial/07.jpg"
-                                            alt="Thumb"
-                                        />
-                                    </div>
-                                    <div className="single-thumb">
-                                        <img
-                                            src="/img/testimonial/08.jpg"
-                                            alt="Thumb"
-                                        />
-                                    </div>
+                                    <Slider
+                                        {...settings3}
+                                        asNavFor={nav1}
+                                        ref={(slider2) => setNav2(slider2)}
+                                        swipeToSlide={true}
+                                        focusOnSelect={true}
+                                    >
+                                        <div className="single-thumb">
+                                            <img
+                                                src="/img/testimonial/06.jpg"
+                                                alt="Thumb"
+                                            />
+                                        </div>
+                                        <div className="single-thumb">
+                                            <img
+                                                src="/img/testimonial/07.jpg"
+                                                alt="Thumb"
+                                            />
+                                        </div>
+                                        <div className="single-thumb">
+                                            <img
+                                                src="/img/testimonial/08.jpg"
+                                                alt="Thumb"
+                                            />
+                                        </div>
+                                        <div className="single-thumb">
+                                            <img
+                                                src="/img/testimonial/06.jpg"
+                                                alt="Thumb"
+                                            />
+                                        </div>
+                                        <div className="single-thumb">
+                                            <img
+                                                src="/img/testimonial/07.jpg"
+                                                alt="Thumb"
+                                            />
+                                        </div>
+                                        <div className="single-thumb">
+                                            <img
+                                                src="/img/testimonial/08.jpg"
+                                                alt="Thumb"
+                                            />
+                                        </div>
+                                    </Slider>
                                 </div>
                             </div>
                             <div className="col-lg-9 col-md-10">
                                 <div className="content-wrapper">
-                                    <div className="single-item-wrap">
-                                        <p className="content">
-                                            Sed ut perspiciatis unde omnis
-                                            natusy error voluptatem accusantium
-                                            doloreue laudan totam rem aperiam
-                                            eaquip quae abillo inventore
-                                            veritatis quasi architecto beatae
-                                            vitae dicta sunt explicabo
-                                        </p>
-                                        <div className="author-info">
-                                            <h5 className="name">
-                                                Mark E. Kaminsky
-                                            </h5>
-                                            <span className="title">
-                                                Web Designer
-                                            </span>
+                                    <Slider
+                                        {...settings2}
+                                        asNavFor={nav2}
+                                        ref={(slider1) => setNav1(slider1)}
+                                    >
+                                        <div className="single-item-wrap">
+                                            <p className="content">
+                                                Sed ut perspiciatis unde omnis
+                                                natusy error voluptatem
+                                                accusantium doloreue laudan
+                                                totam rem aperiam eaquip quae
+                                                abillo inventore veritatis quasi
+                                                architecto beatae vitae dicta
+                                                sunt explicabo
+                                            </p>
+                                            <div className="author-info">
+                                                <h5 className="name">
+                                                    Mark E. Kaminsky
+                                                </h5>
+                                                <span className="title">
+                                                    Web Designer
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="single-item-wrap">
-                                        <p className="content">
-                                            Sed ut perspiciatis unde omnis
-                                            natusy error voluptatem accusantium
-                                            doloreue laudan totam rem aperiam
-                                            eaquip quae abillo inventore
-                                            veritatis quasi architecto beatae
-                                            vitae dicta sunt explicabo
-                                        </p>
-                                        <div className="author-info">
-                                            <h5 className="name">
-                                                Mark E. Kaminsky
-                                            </h5>
-                                            <span className="title">
-                                                Web Designer
-                                            </span>
+                                        <div className="single-item-wrap">
+                                            <p className="content">
+                                                Sed ut perspiciatis unde omnis
+                                                natusy error voluptatem
+                                                accusantium doloreue laudan
+                                                totam rem aperiam eaquip quae
+                                                abillo inventore veritatis quasi
+                                                architecto beatae vitae dicta
+                                                sunt explicabo
+                                            </p>
+                                            <div className="author-info">
+                                                <h5 className="name">
+                                                    Mark E. Kaminsky
+                                                </h5>
+                                                <span className="title">
+                                                    Web Designer
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="single-item-wrap">
-                                        <p className="content">
-                                            Sed ut perspiciatis unde omnis
-                                            natusy error voluptatem accusantium
-                                            doloreue laudan totam rem aperiam
-                                            eaquip quae abillo inventore
-                                            veritatis quasi architecto beatae
-                                            vitae dicta sunt explicabo
-                                        </p>
-                                        <div className="author-info">
-                                            <h5 className="name">
-                                                Mark E. Kaminsky
-                                            </h5>
-                                            <span className="title">
-                                                Web Designer
-                                            </span>
+                                        <div className="single-item-wrap">
+                                            <p className="content">
+                                                Sed ut perspiciatis unde omnis
+                                                natusy error voluptatem
+                                                accusantium doloreue laudan
+                                                totam rem aperiam eaquip quae
+                                                abillo inventore veritatis quasi
+                                                architecto beatae vitae dicta
+                                                sunt explicabo
+                                            </p>
+                                            <div className="author-info">
+                                                <h5 className="name">
+                                                    Mark E. Kaminsky
+                                                </h5>
+                                                <span className="title">
+                                                    Web Designer
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="single-item-wrap">
-                                        <p className="content">
-                                            Sed ut perspiciatis unde omnis
-                                            natusy error voluptatem accusantium
-                                            doloreue laudan totam rem aperiam
-                                            eaquip quae abillo inventore
-                                            veritatis quasi architecto beatae
-                                            vitae dicta sunt explicabo
-                                        </p>
-                                        <div className="author-info">
-                                            <h5 className="name">
-                                                Mark E. Kaminsky
-                                            </h5>
-                                            <span className="title">
-                                                Web Designer
-                                            </span>
+                                        <div className="single-item-wrap">
+                                            <p className="content">
+                                                Sed ut perspiciatis unde omnis
+                                                natusy error voluptatem
+                                                accusantium doloreue laudan
+                                                totam rem aperiam eaquip quae
+                                                abillo inventore veritatis quasi
+                                                architecto beatae vitae dicta
+                                                sunt explicabo
+                                            </p>
+                                            <div className="author-info">
+                                                <h5 className="name">
+                                                    Mark E. Kaminsky
+                                                </h5>
+                                                <span className="title">
+                                                    Web Designer
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="single-item-wrap">
-                                        <p className="content">
-                                            Sed ut perspiciatis unde omnis
-                                            natusy error voluptatem accusantium
-                                            doloreue laudan totam rem aperiam
-                                            eaquip quae abillo inventore
-                                            veritatis quasi architecto beatae
-                                            vitae dicta sunt explicabo
-                                        </p>
-                                        <div className="author-info">
-                                            <h5 className="name">
-                                                Mark E. Kaminsky
-                                            </h5>
-                                            <span className="title">
-                                                Web Designer
-                                            </span>
+                                        <div className="single-item-wrap">
+                                            <p className="content">
+                                                Sed ut perspiciatis unde omnis
+                                                natusy error voluptatem
+                                                accusantium doloreue laudan
+                                                totam rem aperiam eaquip quae
+                                                abillo inventore veritatis quasi
+                                                architecto beatae vitae dicta
+                                                sunt explicabo
+                                            </p>
+                                            <div className="author-info">
+                                                <h5 className="name">
+                                                    Mark E. Kaminsky
+                                                </h5>
+                                                <span className="title">
+                                                    Web Designer
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="single-item-wrap">
-                                        <p className="content">
-                                            Sed ut perspiciatis unde omnis
-                                            natusy error voluptatem accusantium
-                                            doloreue laudan totam rem aperiam
-                                            eaquip quae abillo inventore
-                                            veritatis quasi architecto beatae
-                                            vitae dicta sunt explicabo
-                                        </p>
-                                        <div className="author-info">
-                                            <h5 className="name">
-                                                Mark E. Kaminsky
-                                            </h5>
-                                            <span className="title">
-                                                Web Designer
-                                            </span>
+                                        <div className="single-item-wrap">
+                                            <p className="content">
+                                                Sed ut perspiciatis unde omnis
+                                                natusy error voluptatem
+                                                accusantium doloreue laudan
+                                                totam rem aperiam eaquip quae
+                                                abillo inventore veritatis quasi
+                                                architecto beatae vitae dicta
+                                                sunt explicabo
+                                            </p>
+                                            <div className="author-info">
+                                                <h5 className="name">
+                                                    Mark E. Kaminsky
+                                                </h5>
+                                                <span className="title">
+                                                    Web Designer
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Slider>
                                 </div>
                             </div>
                         </div>
-                        <div className="slider-arrows" />
+
+                        {SampleNextArrow2}
+                        {SamplePrevArrow2}
                     </div>
                 </div>
                 <div

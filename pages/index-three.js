@@ -1,9 +1,45 @@
 import Link from "next/link";
+import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header3 from "../src/layout/Header/Header3";
 import Gallery from "../src/Third Party Components/Gallery";
 
 const indexThree = () => {
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -188,121 +224,124 @@ const indexThree = () => {
                                 data-wow-delay="0.3s"
                             >
                                 <div className="row service-loop service-slider">
-                                    <div className="col">
-                                        <div className="fancy-content-box-two no-shadow">
-                                            <div className="thumbnail">
-                                                <img
-                                                    src="/img/iconic-box/01.jpg"
-                                                    alt="Image"
-                                                />
-                                            </div>
-                                            <div className="box-content">
-                                                <div className="icon">
+                                    <div className="col col-12 col-md-12 col-sm-9">
+                                        <Slider {...settings}>
+                                            <div className="fancy-content-box-two no-shadow">
+                                                <div className="thumbnail">
                                                     <img
-                                                        src="/img/icon/heart-2.png"
-                                                        alt
+                                                        src="/img/iconic-box/01.jpg"
+                                                        alt="Image"
                                                     />
                                                 </div>
-                                                <div className="content">
-                                                    <h4 className="title">
-                                                        <Link href="/service-details">
-                                                            <a>Cardiology</a>
-                                                        </Link>
-                                                    </h4>
-                                                    <p>
-                                                        Amet consect ascnge
-                                                        eiusmod tempors
-                                                    </p>
+                                                <div className="box-content">
+                                                    <div className="icon">
+                                                        <img
+                                                            src="/img/icon/heart-2.png"
+                                                            alt
+                                                        />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h4 className="title">
+                                                            <Link href="/service-details">
+                                                                <a>
+                                                                    Cardiology
+                                                                </a>
+                                                            </Link>
+                                                        </h4>
+                                                        <p>
+                                                            Amet consect ascnge
+                                                            eiusmod tempors
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="fancy-content-box-two no-shadow">
-                                            <div className="thumbnail">
-                                                <img
-                                                    src="/img/iconic-box/02.jpg"
-                                                    alt="Image"
-                                                />
-                                            </div>
-                                            <div className="box-content">
-                                                <div className="icon">
+
+                                            <div className="fancy-content-box-two no-shadow">
+                                                <div className="thumbnail">
                                                     <img
-                                                        src="/img/icon/brain-2.png"
-                                                        alt
+                                                        src="/img/iconic-box/02.jpg"
+                                                        alt="Image"
                                                     />
                                                 </div>
-                                                <div className="content">
-                                                    <h4 className="title">
-                                                        <Link href="/service-details">
-                                                            <a>Neurology</a>
-                                                        </Link>
-                                                    </h4>
-                                                    <p>
-                                                        Quis autem reprehe
-                                                        nderit voluptate
-                                                    </p>
+                                                <div className="box-content">
+                                                    <div className="icon">
+                                                        <img
+                                                            src="/img/icon/brain-2.png"
+                                                            alt
+                                                        />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h4 className="title">
+                                                            <Link href="/service-details">
+                                                                <a>Neurology</a>
+                                                            </Link>
+                                                        </h4>
+                                                        <p>
+                                                            Quis autem reprehe
+                                                            nderit voluptate
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="fancy-content-box-two no-shadow">
-                                            <div className="thumbnail">
-                                                <img
-                                                    src="/img/iconic-box/03.jpg"
-                                                    alt="Image"
-                                                />
-                                            </div>
-                                            <div className="box-content">
-                                                <div className="icon">
+
+                                            <div className="fancy-content-box-two no-shadow">
+                                                <div className="thumbnail">
                                                     <img
-                                                        src="/img/icon/stomach-2.png"
-                                                        alt
+                                                        src="/img/iconic-box/03.jpg"
+                                                        alt="Image"
                                                     />
                                                 </div>
-                                                <div className="content">
-                                                    <h4 className="title">
-                                                        <Link href="/service-details">
-                                                            <a>Orthopedics</a>
-                                                        </Link>
-                                                    </h4>
-                                                    <p>
-                                                        Amet consect ascnge
-                                                        eiusmod tempors
-                                                    </p>
+                                                <div className="box-content">
+                                                    <div className="icon">
+                                                        <img
+                                                            src="/img/icon/stomach-2.png"
+                                                            alt
+                                                        />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h4 className="title">
+                                                            <Link href="/service-details">
+                                                                <a>
+                                                                    Orthopedics
+                                                                </a>
+                                                            </Link>
+                                                        </h4>
+                                                        <p>
+                                                            Amet consect ascnge
+                                                            eiusmod tempors
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="fancy-content-box-two no-shadow">
-                                            <div className="thumbnail">
-                                                <img
-                                                    src="/img/iconic-box/04.jpg"
-                                                    alt="Image"
-                                                />
-                                            </div>
-                                            <div className="box-content">
-                                                <div className="icon">
+
+                                            <div className="fancy-content-box-two no-shadow">
+                                                <div className="thumbnail">
                                                     <img
-                                                        src="/img/icon/virus-2.png"
-                                                        alt
+                                                        src="/img/iconic-box/04.jpg"
+                                                        alt="Image"
                                                     />
                                                 </div>
-                                                <div className="content">
-                                                    <h4 className="title">
-                                                        <Link href="/service-details">
-                                                            <a>Covid 19</a>
-                                                        </Link>
-                                                    </h4>
-                                                    <p>
-                                                        Quis autem reprehe
-                                                        nderit voluptate
-                                                    </p>
+                                                <div className="box-content">
+                                                    <div className="icon">
+                                                        <img
+                                                            src="/img/icon/virus-2.png"
+                                                            alt
+                                                        />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h4 className="title">
+                                                            <Link href="/service-details">
+                                                                <a>Covid 19</a>
+                                                            </Link>
+                                                        </h4>
+                                                        <p>
+                                                            Quis autem reprehe
+                                                            nderit voluptate
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Slider>
                                     </div>
                                 </div>
                             </div>
@@ -439,383 +478,377 @@ const indexThree = () => {
                             </div>
                         </div>
                         <div className="row doctors-loop doctors-slider-two">
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/01.jpg"
-                                            alt="Image"
-                                        />
+                            <div className="col col-12 col-md-12 col-sm-9">
+                                <Slider {...settings}>
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/01.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Lee S. Williamson</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Cardiology
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Lee S. Williamson</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Cardiology
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/02.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Greg S. Grinstead</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Neurology
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/02.jpg"
-                                            alt="Image"
-                                        />
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/03.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Roger K. Jackson</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Orthopedics
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Greg S. Grinstead</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Neurology
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/04.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Rudolph V. Spitler</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Cardiology
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/03.jpg"
-                                            alt="Image"
-                                        />
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/05.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Frank T. Grimsley</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Neurology
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Roger K. Jackson</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Orthopedics
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/06.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Johnny R. Atterberry</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Orthopedics
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/04.jpg"
-                                            alt="Image"
-                                        />
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/07.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Erik R. Faulkner</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Cardiology
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Rudolph V. Spitler</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Cardiology
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/08.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Phillip L. Williams</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Neurology
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/05.jpg"
-                                            alt="Image"
-                                        />
+
+                                    <div className="doctor-box-one mb-50">
+                                        <div className="doctor-photo">
+                                            <img
+                                                src="/img/doctors/09.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="doctor-information">
+                                            <h5 className="name">
+                                                <Link href="/doctor-details">
+                                                    <a>Michael I. Johnson</a>
+                                                </Link>
+                                            </h5>
+                                            <span className="specialty">
+                                                Orthopedics
+                                            </span>
+                                            <ul className="social-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-facebook-f" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-twitter" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fab fa-linkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Frank T. Grimsley</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Neurology
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/06.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Johnny R. Atterberry</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Orthopedics
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/07.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Erik R. Faulkner</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Cardiology
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/08.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Phillip L. Williams</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Neurology
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-9">
-                                <div className="doctor-box-one mb-50">
-                                    <div className="doctor-photo">
-                                        <img
-                                            src="/img/doctors/09.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="doctor-information">
-                                        <h5 className="name">
-                                            <Link href="/doctor-details">
-                                                <a>Michael I. Johnson</a>
-                                            </Link>
-                                        </h5>
-                                        <span className="specialty">
-                                            Orthopedics
-                                        </span>
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-facebook-f" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-youtube" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fab fa-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                </Slider>
                             </div>
                         </div>
                     </div>

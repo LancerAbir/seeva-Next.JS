@@ -184,6 +184,14 @@ span {
     box-shadow: none;
 }
 
+.doctors-section .slick-slide,
+.services-section .slick-slide,
+.testimonial-slider-two .slick-slide,
+.partner-logo-slider .slick-slide {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
 i.far.fa-plus {
     font-size: 13px;
     font-weight: 600;
@@ -2308,6 +2316,25 @@ button {
 
 .hero-slider-arrow-top {
     margin-top: 65px;
+}
+
+.testimonial-slider-arrow-right {
+    bottom: 0;
+    left: 50%;
+    height: 50px;
+    position: absolute;
+    right: 14%;
+    width: 50px;
+    /* transform: translateX(-50%); */
+    z-index: 22;
+}
+
+.testimonial-slider-arrow-left {
+    margin-left: -69px;
+}
+
+.testimonial-slider-arrow-left button {
+    background-color: var(--color-white);
 }
 
 .hero-slider-arrow .slick-arrow:hover {
@@ -4712,6 +4739,7 @@ button {
     -o-transition: 0.3s;
     transition: 0.3s;
     margin: 0 5px;
+    /* background-color: #fff; */
 }
 
 .testimonial-slider-arrow .slick-arrow.next-arrow,
