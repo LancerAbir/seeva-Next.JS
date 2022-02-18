@@ -62,6 +62,75 @@ const indexFive = () => {
             },
         ],
     };
+
+    const SampleNextArrow2 = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="col-lg-6 col-sm-4">
+                <div className="product-carousel-arrows">
+                    <button
+                        className="slick-arrow prev-arrow"
+                        onClick={onClick}
+                    >
+                        <i className="fas fa-angle-left" />
+                    </button>
+                </div>
+            </div>
+        );
+    };
+
+    const SamplePrevArrow2 = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="col-lg-6 col-sm-4">
+                <div className="product-carousel-arrows">
+                    <button
+                        className="slick-arrow next-arrow"
+                        onClick={onClick}
+                    >
+                        <i className="fas fa-angle-right" />
+                    </button>
+                </div>
+            </div>
+        );
+    };
+
+    const settings2 = {
+        dots: true,
+        nextArrow: <SampleNextArrow2 />,
+        prevArrow: <SamplePrevArrow2 />,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings2: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings2: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -2550,216 +2619,214 @@ const indexFive = () => {
                                     <h2 className="title">Featured Products</h2>
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-sm-4">
-                                <div className="product-carousel-arrows" />
-                            </div>
+
+                            {SampleNextArrow2}
+                            {SamplePrevArrow2}
                         </div>
                     </div>
                     <div className="row product-carousel">
-                        <div className="col-lg-3">
-                            <div className="product-box product-box-bg">
-                                <div className="thumbnail">
-                                    <img
-                                        src="/img/products/07.png"
-                                        alt="Image"
-                                    />
+                        <div className="col-12 col-md-12 col-sm-9">
+                            <Slider {...settings2}>
+                                <div className="product-box product-box-bg">
+                                    <div className="thumbnail">
+                                        <img
+                                            src="/img/products/07.png"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div className="content">
+                                        <h5 className="title">
+                                            <Link href="/product-details">
+                                                <a>Vitamin Tablet</a>
+                                            </Link>
+                                        </h5>
+                                        <span className="price">$29.87</span>
+                                    </div>
+                                    <div className="hover-action">
+                                        <ul className="action-btns">
+                                            <li>
+                                                <a href="#">
+                                                    <i className="far fa-heart" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-expand" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-repeat" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" className="add-to-cart">
+                                            Add to cart
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="content">
-                                    <h5 className="title">
-                                        <Link href="/product-details">
-                                            <a>Vitamin Tablet</a>
-                                        </Link>
-                                    </h5>
-                                    <span className="price">$29.87</span>
+
+                                <div className="product-box product-box-bg">
+                                    <div className="thumbnail">
+                                        <img
+                                            src="/img/products/09.png"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div className="content">
+                                        <h5 className="title">
+                                            <Link href="/product-details">
+                                                <a>Covid Face Mask</a>
+                                            </Link>
+                                        </h5>
+                                        <span className="price">$29.87</span>
+                                    </div>
+                                    <div className="hover-action">
+                                        <ul className="action-btns">
+                                            <li>
+                                                <a href="#">
+                                                    <i className="far fa-heart" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-expand" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-repeat" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" className="add-to-cart">
+                                            Add to cart
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="hover-action">
-                                    <ul className="action-btns">
-                                        <li>
-                                            <a href="#">
-                                                <i className="far fa-heart" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-expand" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-repeat" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="#" className="add-to-cart">
-                                        Add to cart
-                                        <i className="far fa-plus" />
-                                    </a>
+
+                                <div className="product-box product-box-bg">
+                                    <div className="thumbnail">
+                                        <img
+                                            src="/img/products/10.png"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div className="content">
+                                        <h5 className="title">
+                                            <Link href="/product-details">
+                                                <a>Hand Sanitizer</a>
+                                            </Link>
+                                        </h5>
+                                        <span className="price">$29.87</span>
+                                    </div>
+                                    <div className="hover-action">
+                                        <ul className="action-btns">
+                                            <li>
+                                                <a href="#">
+                                                    <i className="far fa-heart" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-expand" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-repeat" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" className="add-to-cart">
+                                            Add to cart
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
-                            <div className="product-box product-box-bg">
-                                <div className="thumbnail">
-                                    <img
-                                        src="/img/products/09.png"
-                                        alt="Image"
-                                    />
+
+                                <div className="product-box product-box-bg">
+                                    <div className="thumbnail">
+                                        <img
+                                            src="/img/products/11.png"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div className="content">
+                                        <h5 className="title">
+                                            <Link href="/product-details">
+                                                <a>Syrup Glass Bottles</a>
+                                            </Link>
+                                        </h5>
+                                        <span className="price">$29.87</span>
+                                    </div>
+                                    <div className="hover-action">
+                                        <ul className="action-btns">
+                                            <li>
+                                                <a href="#">
+                                                    <i className="far fa-heart" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-expand" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-repeat" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" className="add-to-cart">
+                                            Add to cart
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="content">
-                                    <h5 className="title">
-                                        <Link href="/product-details">
-                                            <a>Covid Face Mask</a>
-                                        </Link>
-                                    </h5>
-                                    <span className="price">$29.87</span>
+
+                                <div className="product-box product-box-bg">
+                                    <div className="thumbnail">
+                                        <img
+                                            src="/img/products/01.png"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div className="content">
+                                        <h5 className="title">
+                                            <Link href="/product-details">
+                                                <a>Vitamin Tablet</a>
+                                            </Link>
+                                        </h5>
+                                        <span className="price">$29.87</span>
+                                    </div>
+                                    <div className="hover-action">
+                                        <ul className="action-btns">
+                                            <li>
+                                                <a href="#">
+                                                    <i className="far fa-heart" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-expand" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i className="fa-solid fa-repeat" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" className="add-to-cart">
+                                            Add to cart
+                                            <i className="far fa-plus" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="hover-action">
-                                    <ul className="action-btns">
-                                        <li>
-                                            <a href="#">
-                                                <i className="far fa-heart" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-expand" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-repeat" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="#" className="add-to-cart">
-                                        Add to cart
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
-                            <div className="product-box product-box-bg">
-                                <div className="thumbnail">
-                                    <img
-                                        src="/img/products/10.png"
-                                        alt="Image"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <h5 className="title">
-                                        <Link href="/product-details">
-                                            <a>Hand Sanitizer</a>
-                                        </Link>
-                                    </h5>
-                                    <span className="price">$29.87</span>
-                                </div>
-                                <div className="hover-action">
-                                    <ul className="action-btns">
-                                        <li>
-                                            <a href="#">
-                                                <i className="far fa-heart" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-expand" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-repeat" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="#" className="add-to-cart">
-                                        Add to cart
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
-                            <div className="product-box product-box-bg">
-                                <div className="thumbnail">
-                                    <img
-                                        src="/img/products/11.png"
-                                        alt="Image"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <h5 className="title">
-                                        <Link href="/product-details">
-                                            <a>Syrup Glass Bottles</a>
-                                        </Link>
-                                    </h5>
-                                    <span className="price">$29.87</span>
-                                </div>
-                                <div className="hover-action">
-                                    <ul className="action-btns">
-                                        <li>
-                                            <a href="#">
-                                                <i className="far fa-heart" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-expand" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-repeat" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="#" className="add-to-cart">
-                                        Add to cart
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
-                            <div className="product-box product-box-bg">
-                                <div className="thumbnail">
-                                    <img
-                                        src="/img/products/01.png"
-                                        alt="Image"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <h5 className="title">
-                                        <Link href="/product-details">
-                                            <a>Vitamin Tablet</a>
-                                        </Link>
-                                    </h5>
-                                    <span className="price">$29.87</span>
-                                </div>
-                                <div className="hover-action">
-                                    <ul className="action-btns">
-                                        <li>
-                                            <a href="#">
-                                                <i className="far fa-heart" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-expand" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa-solid fa-repeat" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="#" className="add-to-cart">
-                                        Add to cart
-                                        <i className="far fa-plus" />
-                                    </a>
-                                </div>
-                            </div>
+                            </Slider>
                         </div>
                     </div>
                 </div>

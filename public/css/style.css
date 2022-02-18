@@ -184,6 +184,7 @@ span {
     box-shadow: none;
 }
 
+.product-carousel .slick-slide,
 .doctors-section .slick-slide,
 .services-section .slick-slide,
 .testimonial-slider-two .slick-slide,
