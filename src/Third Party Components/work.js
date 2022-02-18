@@ -12,8 +12,8 @@ index-two -- Trusted Partners
 
 
 // index-four -- header
-index-four -- Testimonials
-index-five -- header
+// index-four -- Testimonials
+// index-five -- header
 index-five -- Pharmacy Products
 product-details -- 
 

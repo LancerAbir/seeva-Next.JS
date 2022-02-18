@@ -2314,6 +2314,14 @@ button {
     transition: 0.3s;
 }
 
+.testimonial-slider-three .slider-arrows button.slick-arrow.prev-arrow {
+    position: absolute;
+    top: 0;
+    left: -15%;
+    background-color: #fff;
+    transform: translateY(50%);
+}
+
 .hero-slider-arrow-top {
     margin-top: 65px;
 }
@@ -5047,7 +5055,11 @@ button {
 
 .testimonial-slider-three .slider-arrows .slick-arrow.next-arrow {
     left: auto;
-    right: 15px;
+    right: -15%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    transform: translateY(50%);
 }
 
 @media (max-width: 991px) {

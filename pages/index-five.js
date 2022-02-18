@@ -1,9 +1,67 @@
 import Link from "next/link";
+import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header5 from "../src/layout/Header/Header5";
 import Counter from "../src/Third Party Components/Counter";
 
 const indexFive = () => {
+    const SampleNextArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="hero-slider-arrow hero-slider-arrow-top">
+                <button className="slick-arrow prev-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-left" />
+                </button>
+            </div>
+        );
+    };
+
+    const SamplePrevArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div className="hero-slider-arrow">
+                <button className="slick-arrow next-arrow" onClick={onClick}>
+                    <i className="fas fa-angle-right" />
+                </button>
+            </div>
+        );
+    };
+
+    const settings = {
+        dots: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -12,88 +70,91 @@ const indexFive = () => {
             {/*====== Hero Slider Start ======*/}
             <section className="hero-slider hero-slider-two style-two">
                 <div className="hero-slider-active">
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-6.jpg)",
-                            }}
-                        />
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-9 col-md-9">
-                                    <div className="hero-content">
-                                        <span
-                                            className="tagline"
-                                            data-animation="fadeInDown"
-                                            data-delay="0.5s"
-                                        >
-                                            Love Respect &amp; Care
-                                        </span>
-                                        <h1
-                                            className="title"
-                                            data-animation="fadeInLeft"
-                                            data-delay="0.6s"
-                                        >
-                                            Medicine Care &amp; Pharmacy
-                                        </h1>
-                                        <a
-                                            href="#"
-                                            className="template-btn template-btn-bordered"
-                                            data-animation="fadeInUp"
-                                            data-delay="0.7s"
-                                        >
-                                            Explore Our Service
-                                            <i className="far fa-plus" />
-                                        </a>
+                    <Slider {...settings}>
+                        <div className="single-hero-slider">
+                            <div
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-6.jpg)",
+                                }}
+                            />
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-9 col-md-9">
+                                        <div className="hero-content">
+                                            <span
+                                                className="tagline"
+                                                data-animation="fadeInDown"
+                                                data-delay="0.5s"
+                                            >
+                                                Love Respect &amp; Care
+                                            </span>
+                                            <h1
+                                                className="title"
+                                                data-animation="fadeInLeft"
+                                                data-delay="0.6s"
+                                            >
+                                                Medicine Care &amp; Pharmacy
+                                            </h1>
+                                            <a
+                                                href="#"
+                                                className="template-btn template-btn-bordered"
+                                                data-animation="fadeInUp"
+                                                data-delay="0.7s"
+                                            >
+                                                Explore Our Service
+                                                <i className="far fa-plus" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="single-hero-slider">
-                        <div
-                            className="hero-slider-bg bg-size-cover"
-                            style={{
-                                backgroundImage:
-                                    "url(/img/hero-img/hero-slider-7.jpg)",
-                            }}
-                        />
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-9 col-md-9">
-                                    <div className="hero-content">
-                                        <span
-                                            className="tagline"
-                                            data-animation="fadeInDown"
-                                            data-delay="0.5s"
-                                        >
-                                            Love Respect &amp; Care
-                                        </span>
-                                        <h1
-                                            className="title"
-                                            data-animation="fadeInLeft"
-                                            data-delay="0.6s"
-                                        >
-                                            Medicine Care &amp; Pharmacy
-                                        </h1>
-                                        <a
-                                            href="#"
-                                            className="template-btn template-btn-bordered"
-                                            data-animation="fadeInUp"
-                                            data-delay="0.7s"
-                                        >
-                                            Explore Our Service
-                                            <i className="far fa-plus" />
-                                        </a>
+                        <div className="single-hero-slider">
+                            <div
+                                className="hero-slider-bg bg-size-cover"
+                                style={{
+                                    backgroundImage:
+                                        "url(/img/hero-img/hero-slider-7.jpg)",
+                                }}
+                            />
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-9 col-md-9">
+                                        <div className="hero-content">
+                                            <span
+                                                className="tagline"
+                                                data-animation="fadeInDown"
+                                                data-delay="0.5s"
+                                            >
+                                                Love Respect &amp; Care
+                                            </span>
+                                            <h1
+                                                className="title"
+                                                data-animation="fadeInLeft"
+                                                data-delay="0.6s"
+                                            >
+                                                Medicine Care &amp; Pharmacy
+                                            </h1>
+                                            <a
+                                                href="#"
+                                                className="template-btn template-btn-bordered"
+                                                data-animation="fadeInUp"
+                                                data-delay="0.7s"
+                                            >
+                                                Explore Our Service
+                                                <i className="far fa-plus" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Slider>
                 </div>
-                <div className="hero-slider-arrow" />
+                {SampleNextArrow}
+                {SamplePrevArrow}
             </section>
             {/*====== Hero Slider End ======*/}
             {/*====== Features Section Start ======*/}
