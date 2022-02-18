@@ -1649,6 +1649,7 @@ button {
     background-color: var(--color-white);
 }
 
+
 .template-header.sticky-header.sticky-on .site-menu ul li {
     line-height: 100px;
 }

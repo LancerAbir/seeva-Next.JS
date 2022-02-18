@@ -20,6 +20,7 @@ const MainMenu = () => {
                 }
                         : "container-fluid container-1400"
                  `}
+                id="wsmainfull"
             >
                 <div
                     className={`header-navigation ${
