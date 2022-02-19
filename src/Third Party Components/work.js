@@ -15,7 +15,7 @@ responsive
 // index-four -- Testimonials
 // index-five -- header
 // index-five -- Pharmacy Products
-product-details -- 
+// product-details -- 
 
 
 

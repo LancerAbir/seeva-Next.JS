@@ -1,13 +1,20 @@
 import Link from "next/link";
 import Slider from "react-slick";
+import { baseUrl } from "../src/config/config";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
 
 const productDetails = () => {
     const settings = {
-        dots: false,
-        arrows: false,
+        customPaging: function (i) {
+            return (
+                <a>
+                    <img src={`${baseUrl}/0${i + 1}.jpg`} />
+                </a>
+            );
+        },
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -58,44 +65,24 @@ const productDetails = () => {
                                     <Slider {...settings}>
                                         <div className="single-image">
                                             <img
-                                                src="/img/shop/product-details/01.jpg"
+                                                src={baseUrl + "/01.jpg"}
                                                 alt="Image"
                                             />
                                         </div>
                                         <div className="single-image">
                                             <img
-                                                src="/img/shop/product-details/02.jpg"
+                                                src={baseUrl + "/02.jpg"}
                                                 alt="Image"
                                             />
                                         </div>
+
                                         <div className="single-image">
                                             <img
-                                                src="/img/shop/product-details/03.jpg"
+                                                src={baseUrl + "/03.jpg"}
                                                 alt="Image"
                                             />
                                         </div>
                                     </Slider>
-                                </div>
-
-                                <div className="thumb-gallery">
-                                    <div className="single-image">
-                                        <img
-                                            src="/img/shop/product-details/01-thumb.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="single-image">
-                                        <img
-                                            src="/img/shop/product-details/02-thumb.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="single-image">
-                                        <img
-                                            src="/img/shop/product-details/03-thumb.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
                                 </div>
                             </div>
                         </div>

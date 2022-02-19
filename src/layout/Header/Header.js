@@ -4,6 +4,7 @@ import Sticky from "react-sticky-el";
 import MainMenu from "../../Template Parts/MainMenu";
 import MobilePanel from "../../Template Parts/MobilePanel";
 import StartOffCanvas from "../../Template Parts/StartOffCanvas";
+
 const Header = () => {
     const router = useRouter();
     const currentPath = router.pathname;
@@ -20,7 +21,11 @@ const Header = () => {
                 (currentPath === "/about", "/service" ? "" : "absolute-header")
             } ${currentPath === "/" ? "absolute-header" : ""} `}
         >
-            <Sticky className="sticky-on">
+            <Sticky
+                animate={{ y: 50 }}
+                transition={{ duration: 2 }}
+                className="sticky-on"
+            >
                 {/* Start MainMenu */}
                 <MainMenu activateLasers={activateLasers} />
                 {/* End MainMenu */}

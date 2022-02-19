@@ -1682,8 +1682,8 @@ button {
 .sticky {
     background-color: #fff;
 }
-.sticky2 {
-    background-color: red;
+.header-four .sticky {
+    background-color: var(--color-heading);
 }
 
 .template-header.sticky-header.sticky-on .header-topbar,
@@ -10268,9 +10268,14 @@ h2.accordion-header span {
     cursor: pointer;
 }
 
+.product-gallery-wrapper ul.slick-dots li {
+    min-width: 120px;
+    top: 53px;
+}
+
 /*======= Product Description =======*/
 .description-wrapper {
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 .description-wrapper .common-title {
