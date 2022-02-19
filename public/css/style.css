@@ -193,6 +193,24 @@ span {
     box-sizing: border-box;
 }
 
+section.product-carousel-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+section.product-carousel-section .product-carousel-arrows .next-arrow {
+    position: absolute;
+    top: -122px;
+    right: 0;
+}
+section.product-carousel-section .product-carousel-arrows .prev-arrow {
+    position: absolute;
+    top: -577px;
+    right: 55px;
+}
+section.product-carousel-section .slick-list {
+    margin-bottom: 55px;
+}
 i.far.fa-plus {
     font-size: 13px;
     font-weight: 600;
@@ -1984,7 +2002,14 @@ button {
     border-radius: 30px;
     border: none;
 }
+.submit-btn-wrap button.template-btn {
+    background-color: var(--color-secondary);
+    transition: 0.3s;
+}
 
+.submit-btn-wrap button.template-btn:hover {
+    background-color: var(--color-fourth);
+}
 @media (max-width: 575px) {
     .template-btn {
         padding: 18px 30px;

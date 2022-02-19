@@ -66,7 +66,7 @@ const indexFive = () => {
     const SampleNextArrow2 = (props) => {
         const { onClick } = props;
         return (
-            <div className="col-lg-6 col-sm-4">
+            <div className="col col-12 col-md-12 col-sm-9">
                 <div className="product-carousel-arrows mr5">
                     <button
                         className="slick-arrow prev-arrow"
@@ -82,7 +82,7 @@ const indexFive = () => {
     const SamplePrevArrow2 = (props) => {
         const { onClick } = props;
         return (
-            <div className="col-lg-6 col-sm-4">
+            <div className="col col-12 col-md-12 col-sm-9">
                 <div className="product-carousel-arrows">
                     <button
                         className="slick-arrow next-arrow"
@@ -106,7 +106,7 @@ const indexFive = () => {
         responsive: [
             {
                 breakpoint: 1024,
-                settings2: {
+                settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
@@ -115,7 +115,7 @@ const indexFive = () => {
             },
             {
                 breakpoint: 600,
-                settings2: {
+                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
@@ -123,7 +123,7 @@ const indexFive = () => {
             },
             {
                 breakpoint: 480,
-                settings2: {
+                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },

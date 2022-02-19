@@ -1,9 +1,45 @@
 import Link from "next/link";
+import Slider from "react-slick";
 import Footer from "../src/layout/Footer/Footer";
 import Header from "../src/layout/Header/Header";
 import PageTitle from "../src/Template Parts/PageTitle";
 
 const productDetails = () => {
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <>
             {/*====== Start Template Header ======*/}
@@ -19,25 +55,28 @@ const productDetails = () => {
                         <div className="col-lg-5 col-md-9 col-sm-11">
                             <div className="product-gallery-wrapper">
                                 <div className="main-gallery">
-                                    <div className="single-image">
-                                        <img
-                                            src="/img/shop/product-details/01.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="single-image">
-                                        <img
-                                            src="/img/shop/product-details/02.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
-                                    <div className="single-image">
-                                        <img
-                                            src="/img/shop/product-details/03.jpg"
-                                            alt="Image"
-                                        />
-                                    </div>
+                                    <Slider {...settings}>
+                                        <div className="single-image">
+                                            <img
+                                                src="/img/shop/product-details/01.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="single-image">
+                                            <img
+                                                src="/img/shop/product-details/02.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                        <div className="single-image">
+                                            <img
+                                                src="/img/shop/product-details/03.jpg"
+                                                alt="Image"
+                                            />
+                                        </div>
+                                    </Slider>
                                 </div>
+
                                 <div className="thumb-gallery">
                                     <div className="single-image">
                                         <img
